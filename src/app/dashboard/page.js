@@ -1,6 +1,7 @@
 "use client";
 import { useSession, signIn, signOut } from "next-auth/react";
-import "../globals.css";
+import Header from "@/components/Header";
+import DashboardCanvas from "@/components/DashboardCanvas";
 
 export default function Page() {
   const { data: session, status } = useSession();
@@ -8,10 +9,21 @@ export default function Page() {
 
   if (status === "authenticated") {
     return (
-      <div className="flex flex-col justify-items-center items-center ">
-        Sign in as {session.user.email}
-        <button onClick={() => signOut()}>Sign out</button>
-      </div>
+      <>
+        <main className="flex px-0 ">
+          <div className="overflow-x-hidden">
+            <Header
+              name={session.user.email}
+              img={session.user.image}
+              logout={() => signOut()}
+            />
+          </div>
+
+          <div className="px-6 -z-999">
+            <DashboardCanvas />
+          </div>
+        </main>
+      </>
     );
   }
 }

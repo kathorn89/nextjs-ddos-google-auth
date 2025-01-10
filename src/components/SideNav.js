@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import logoFull from "../public/PTR_logo_primary_fullcolor_reverse.jpg";
-import logoSmall from "../public/PTR_icon_red.png";
+import logoFull from "@/assets/PTR_logo_primary_fullcolor_reverse.jpg";
+import logoSmall from "@/assets/PTR_icon_red.png";
 import Icon, {
   DashboardFilled,
   RightOutlined,

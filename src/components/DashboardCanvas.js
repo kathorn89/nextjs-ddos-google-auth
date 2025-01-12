@@ -150,8 +150,8 @@ export default function Page() {
 
   return (
     <>
-      <main className="flex flex-col items-center justify-between w-full h-screen px-0 py-14">
-        <div className="flex flex-col gap-3 px-2 py-4 pb-8">
+      <main className="flex flex-col items-center justify-between w-full h-screen px-0 py-16">
+        <div className="flex flex-col gap-3 px-2 py-2 pb-8">
           <div className="flex flex-row items-center justify-between">
             <div> </div>
             <QuickRangesDropdown onApply={handleApplyTimeRange} />
@@ -162,7 +162,7 @@ export default function Page() {
               {/* Summary Section */}
               <div className="flex flex-col gap-3">
                 <div className="flex flex-row items-center gap-1 justify-items-center">
-                  <h1 className={`text-3xl font-bold text-navy`}>HTTPS</h1>
+                  <h1 className={`text-2xl font-bold text-navy`}>HTTPS</h1>
                   <button
                     className="mt-1 text-md"
                     onClick={() => setShowSummary(!showSummary)}
@@ -236,7 +236,7 @@ export default function Page() {
               <div className="flex flex-col gap-3">
                 <div className="flex flex-row items-center justify-between mt-4">
                   <div className="flex flex-row items-center gap-1 justify-items-center">
-                    <h1 className={`text-3xl font-bold text-navy`}>TCP</h1>
+                    <h1 className={`text-2xl font-bold text-navy`}>TCP</h1>
                     <button
                       className="mt-1 text-md"
                       onClick={() => setShowTCP(!showTCP)}
@@ -279,7 +279,7 @@ export default function Page() {
             <div className="flex flex-col gap-3">
               <div className="flex flex-row items-center justify-between">
                 <div className="flex flex-row items-center gap-1 justify-items-center">
-                  <h1 className={`text-3xl font-bold text-navy`}>
+                  <h1 className={`text-2xl font-bold text-navy`}>
                     Health Check
                   </h1>
                   <button

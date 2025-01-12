@@ -1,5 +1,6 @@
 "use client";
 
+import { signOut } from "next-auth/react";
 import { DownOutlined, RocketOutlined, UserOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,7 +9,7 @@ import { Dropdown, Menu, Avatar, Space, Badge } from "antd";
 
 import { Text } from "./Text";
 
-export default function Header({ name, img, logout }) {
+export default function Header({ name, img }) {
   return (
     <header className="z-99">
       <nav className="fixed top-0 justify-between w-[96vw] pl-6 pr-10 py-3 overflow-x-hidden bg-white z-1000 lg:flex-wrap lg:justify-start">
@@ -32,12 +33,13 @@ export default function Header({ name, img, logout }) {
             <Avatar size={36} src={img} />
 
             <div className="flex flex-col">
-              <Text sub3 className="text-navy">
-                {name}
-              </Text>
-              <Text small12 onClick={logout}>
+              <h3 className="text-navy font-semibold text-sm">{name}</h3>
+              <p
+                onClick={() => signOut()}
+                className="text-xs text-gray-500 cursor-pointer hover:text-red"
+              >
                 Sign out
-              </Text>
+              </p>
             </div>
           </div>
         </div>

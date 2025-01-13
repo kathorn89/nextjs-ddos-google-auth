@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import { Figtree } from "next/font/google";
 import { NextAuthProvider } from "./Providers";
 import Header from "@/components/Header";
-import SideNav from "@/components/SideNav";
+import Navbar from "@/components/SideNav";
 
 import "./globals.css";
 
@@ -17,9 +17,7 @@ export default function RootLayout({ children }) {
       <body className={figtree.className}>
         <NextAuthProvider>
           <div className="relative flex -z-1">
-            <SideNav />
-
-            <Header />
+            {/* <Header /> */}
             <div className="w-full overflow-x-auto">
               <div className="h-calc(-48px + 100vh) overflow-auto ">
                 <div className="relative flex justify-center w-full h-full mx-auto overflow-x-hidden overflow-y-scroll">

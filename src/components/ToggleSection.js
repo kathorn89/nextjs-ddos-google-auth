@@ -10,7 +10,7 @@ export default function ToggleSection({ title, children }) {
     <div className="flex flex-col gap-2 mt-4">
       <div className="flex flex-row items-center justify-between px-2">
         <div className="flex flex-row items-center gap-1 justify-items-center">
-          <h1 className="text-3xl font-bold text-navy">{title}</h1>
+          <h1 className="text-2xl font-bold text-navy">{title}</h1>
           <button
             onClick={() => setIsVisible(!isVisible)}
             className="mt-1 text-md"

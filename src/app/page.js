@@ -1,13 +1,12 @@
 "use client";
-import { authOptions } from "@/lib/auth";
 import { redirect } from "next/navigation";
-import { getServerSession } from "next-auth";
+import { useSession } from "next-auth/react";
 import "./globals.css";
 
-export default async function Page() {
-  const session = await getServerSession(authOptions);
+export default function Page() {
+  const { data: session, status } = useSession();
 
-  if (session) {
+  if (status === "authenticated") {
     return redirect("/dashboard");
   }
   return redirect("/login");

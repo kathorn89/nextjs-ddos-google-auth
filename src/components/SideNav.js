@@ -53,12 +53,12 @@ export default function SideNav({ selectedNavbar, collapsed, setCollapsed }) {
       label: "Realtime",
     },
 
-    {
-      path: "/report",
-      icon: FileTextFilled,
-      iconActive: FileTextFilled,
-      label: "Report",
-    },
+    // {
+    //   path: "/report",
+    //   icon: FileTextFilled,
+    //   iconActive: FileTextFilled,
+    //   label: "Report",
+    // },
   ];
 
   return (

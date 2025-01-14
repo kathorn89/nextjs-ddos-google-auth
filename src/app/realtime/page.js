@@ -135,7 +135,7 @@ export default async function Page() {
   }
   return (
     <>
-      <Header name={session.user.email} img={session.user.image} />
+      <Header />
       <main className="flex flex-col items-center justify-between w-full h-screen px-6 py-14">
         <div className="flex flex-col gap-3 py-4 pb-8">
           <div className="grid gap-4 md:grid-cols-2 sm:grid-cols-1">

@@ -1,15 +1,20 @@
 "use client";
 
-import { signOut } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 import { DownOutlined, RocketOutlined, UserOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import Image from "next/image";
 import userImg from "@/assets/userImg.svg";
 import { Dropdown, Menu, Avatar, Space, Badge } from "antd";
 
-import { Text } from "./Text";
+export default function Header() {
+  // Access session data
+  const { data: session } = useSession();
 
-export default function Header({ name, img }) {
+  // Extract user data from the session
+  const name = session?.user?.name || "Guest";
+  const img = session?.user?.image || null;
+
   return (
     <header className="z-99">
       <nav className="fixed top-0 justify-between w-[96vw] pl-6 pr-10 py-3 overflow-x-hidden bg-white z-1000 lg:flex-wrap lg:justify-start">

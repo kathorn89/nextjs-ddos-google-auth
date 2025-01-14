@@ -14,7 +14,7 @@ export default async function Page() {
     <>
       <main className="flex px-0 ">
         <div className="overflow-x-hidden">
-          <Header name={session.user.email} img={session.user.image} />
+          <Header />
         </div>
 
         <div className="px-6 -z-999">

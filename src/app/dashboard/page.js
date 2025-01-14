@@ -1,17 +1,26 @@
-"use client";
-import { useSession, signIn, signOut } from "next-auth/react";
-import "../globals.css";
+import { getServerSession } from "next-auth";
+import Header from "@/components/Header";
+import DashboardCanvas from "@/components/DashboardCanvas";
+import { authOptions } from "@/lib/auth";
+import { redirect } from "next/navigation";
 
-export default function Page() {
-  const { data: session, status } = useSession();
-  if (status === "loading") return <h1> loading... please wait</h1>;
+export default async function Page() {
+  const session = await getServerSession(authOptions);
 
-  if (status === "authenticated") {
-    return (
-      <div className="flex flex-col justify-items-center items-center ">
-        Sign in as {session.user.email}
-        <button onClick={() => signOut()}>Sign out</button>
-      </div>
-    );
+  if (!session) {
+    return redirect("/login");
   }
+  return (
+    <>
+      <main className="flex px-0 ">
+        <div className="overflow-x-hidden">
+          <Header name={session.user.email} img={session.user.image} />
+        </div>
+
+        <div className="px-6 -z-999">
+          <DashboardCanvas />
+        </div>
+      </main>
+    </>
+  );
 }

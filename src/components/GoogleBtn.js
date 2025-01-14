@@ -4,7 +4,9 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import { Button } from "antd";
 import logoGoogle from "@/assets/logoGoogle.png";
 import Image from "next/image";
-import { Text } from "./Text";
+import { Figtree } from "next/font/google";
+
+const figtree = Figtree({ subsets: ["latin"] });
 
 export default function GoogleBtn() {
   return (
@@ -15,9 +17,9 @@ export default function GoogleBtn() {
       className="w-80 h-10 border-grey"
     >
       <Image src={logoGoogle} alt="Google logo" width={20} height={20} />
-      <Text button sub2 className="text-grey">
-        Sign in with google
-      </Text>
+      <div className={figtree.className}>
+        <h3 className="text-base">Sign in with google</h3>
+      </div>
     </Button>
   );
 }

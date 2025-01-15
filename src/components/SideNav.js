@@ -61,8 +61,14 @@ export default function SideNav({ selectedNavbar, collapsed, setCollapsed }) {
       >
         <aside className="fixed top-0 flex flex-col w-full h-screen overflow-x-hidden break-words z-1 columns-1">
           {/* Top */}
-          <div className="relative pb-4 mt-2 ">
-            <div className="flex flex-col space-y-2 items-center mb-2">
+          <div
+            className={`${isSidebarExpanded ? "mt-2" : "mt-3"} relative pb-4 `}
+          >
+            <div
+              className={`${
+                isSidebarExpanded ? "mb-1" : "mb-2"
+              } flex flex-col space-y-2 items-center mb-2 `}
+            >
               <Link href="/">
                 <Image
                   src={isSidebarExpanded ? logoFull : logoSmall}

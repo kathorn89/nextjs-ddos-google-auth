@@ -5,6 +5,11 @@ import MyIframe from "@/components/MyIframe";
 import Header from "@/components/Header";
 import ToggleSection from "@/components/ToggleSection";
 
+export const metadata = {
+  title: "Dashboard",
+  description: "DDos Dashboard by Playtorium",
+};
+
 export default async function Page() {
   const session = await getServerSession(authOptions);
 

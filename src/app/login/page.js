@@ -6,6 +6,11 @@ import { Col, Form, Row } from "antd";
 import logoSmall from "@/assets/PTR_icon_red.png";
 import GoogleBtn from "@/components/GoogleBtn";
 
+export const metadata = {
+  title: "Dashboard",
+  description: "DDos Dashboard by Playtorium",
+};
+
 export default async function Page() {
   const session = await getServerSession(authOptions);
   if (session) {
@@ -26,9 +31,9 @@ export default async function Page() {
           className="flex items-center bg-white max-w-[500px] h-[520px] rounded-r-xl p-4"
         >
           <Form className="w-full">
-            <Row gutter={[16, 16]} justify="center">
+            <Row gutter={[16, 16]} justify="center" className="mb-2">
               <Col>
-                <Image src={logoSmall} alt="DDos Icon" width={72} height={72} />
+                <Image src={logoSmall} alt="DDos Icon" width={56} height={56} />
               </Col>
             </Row>
             <Row gutter={[16, 16]} justify="center">

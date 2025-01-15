@@ -4,6 +4,11 @@ import DashboardCanvas from "@/components/DashboardCanvas";
 import { authOptions } from "@/lib/auth";
 import { redirect } from "next/navigation";
 
+export const metadata = {
+  title: "Dashboard",
+  description: "DDos Dashboard by Playtorium",
+};
+
 export default async function Page() {
   const session = await getServerSession(authOptions);
 

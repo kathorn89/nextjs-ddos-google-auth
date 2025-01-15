@@ -11,31 +11,28 @@ import Icon, {
   DashboardFilled,
   RightOutlined,
   LeftOutlined,
-  FileTextFilled,
   PieChartFilled,
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
-  AmazonCircleFilled,
 } from "@ant-design/icons";
 
 export default function SideNav({ selectedNavbar, collapsed, setCollapsed }) {
   const pathname = usePathname();
 
-  const [isSidebarExpanded, setIsSidebarExpanded] = useState(() => {
-    if (typeof window !== "undefined") {
-      const saved = window.localStorage.getItem("sidebarExpanded");
-      return saved !== null ? JSON.parse(saved) : true;
-    }
-    return true; // default state if window is not defined
-  });
+  const [isSidebarExpanded, setIsSidebarExpanded] = useState(true); // Default to true
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.localStorage.setItem(
-        "sidebarExpanded",
-        JSON.stringify(isSidebarExpanded)
-      );
+    // Load sidebar state from localStorage on client
+    const saved = window.localStorage.getItem("sidebarExpanded");
+    if (saved !== null) {
+      setIsSidebarExpanded(JSON.parse(saved));
     }
+  }, []);
+
+  useEffect(() => {
+    // Save to localStorage whenever the state changes
+    window.localStorage.setItem(
+      "sidebarExpanded",
+      JSON.stringify(isSidebarExpanded)
+    );
   }, [isSidebarExpanded]);
 
   const toggleSidebar = () => {
@@ -46,22 +43,13 @@ export default function SideNav({ selectedNavbar, collapsed, setCollapsed }) {
     {
       path: "/dashboard",
       icon: PieChartFilled,
-      iconActive: PieChartFilled,
       label: "Dashboard",
     },
     {
       path: "/realtime",
       icon: DashboardFilled,
-      iconActive: DashboardFilled,
       label: "Realtime",
     },
-
-    // {
-    //   path: "/report",
-    //   icon: FileTextFilled,
-    //   iconActive: FileTextFilled,
-    //   label: "Report",
-    // },
   ];
 
   return (
@@ -95,10 +83,7 @@ export default function SideNav({ selectedNavbar, collapsed, setCollapsed }) {
                   active={pathname === path} // Set to `true` based on current route
                   icon={
                     pathname === path ? (
-                      <Icon
-                        component={iconActive}
-                        style={{ color: "#E64A51" }}
-                      />
+                      <Icon component={icon} style={{ color: "#E64A51" }} />
                     ) : (
                       <Icon component={icon} />
                     )
@@ -158,7 +143,7 @@ export const SideNavItem = ({
       className={`h-full relative flex items-center whitespace-nowrap  ${
         active
           ? "bg-navy_2 text-white border-r-4 border-red"
-          : "font-base text-sm bg-navy shadow-sm text-white"
+          : "font-base text-sm bg-navy shadow-sm text-gray-300"
       }
       ${isSidebarExpanded ? "pl-6" : "justify-center"}`}
     >

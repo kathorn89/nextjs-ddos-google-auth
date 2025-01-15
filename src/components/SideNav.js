@@ -17,7 +17,7 @@ import Icon, {
 export default function SideNav({ selectedNavbar, collapsed, setCollapsed }) {
   const pathname = usePathname();
 
-  const [isSidebarExpanded, setIsSidebarExpanded] = useState(true); // Default to true
+  const [isSidebarExpanded, setIsSidebarExpanded] = useState(false); // Default to true
 
   useEffect(() => {
     // Load sidebar state from localStorage on client

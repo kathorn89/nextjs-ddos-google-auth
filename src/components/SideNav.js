@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 import logoFull from "@/assets/PTR_logo_primary_fullcolor_reverse.jpg";
 import logoSmall from "@/assets/PTR_icon_red.png";
@@ -18,6 +19,8 @@ import Icon, {
 } from "@ant-design/icons";
 
 export default function SideNav({ selectedNavbar, collapsed, setCollapsed }) {
+  const pathname = usePathname();
+
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(() => {
     if (typeof window !== "undefined") {
       const saved = window.localStorage.getItem("sidebarExpanded");
@@ -68,25 +71,30 @@ export default function SideNav({ selectedNavbar, collapsed, setCollapsed }) {
           isSidebarExpanded ? "w-[180px]" : "w-[68px]"
         }  border-r transition-all duration-300 ease-in-out transform hidden sm:flex h-screen bg-navy`}
       >
-        <aside className="fixed top-0 flex flex-col w-full h-screen px-4 overflow-x-hidden break-words z-1 columns-1">
+        <aside className="fixed top-0 flex flex-col w-full h-screen overflow-x-hidden break-words z-1 columns-1">
           {/* Top */}
-          <div className="relative pb-4 mt-2">
-            <div className="flex flex-col space-y-2">
+          <div className="relative pb-4 mt-2 ">
+            <div className="flex flex-col space-y-2 items-center mb-2">
               <Link href="/">
                 <Image
                   src={isSidebarExpanded ? logoFull : logoSmall}
                   alt="Logo"
                   width="100%"
-                  height="50px"
+                  height={isSidebarExpanded ? "50" : "40"}
                   priority={true}
                 />
               </Link>
+            </div>
+
+            {/* Menu Items */}
+            <div className="flex flex-col space-y-2 ">
               {items.map(({ path, icon, iconActive, label }) => (
                 <SideNavItem
                   key={path}
                   label={label}
+                  active={pathname === path} // Set to `true` based on current route
                   icon={
-                    selectedNavbar === label ? (
+                    pathname === path ? (
                       <Icon
                         component={iconActive}
                         style={{ color: "#E64A51" }}
@@ -95,20 +103,13 @@ export default function SideNav({ selectedNavbar, collapsed, setCollapsed }) {
                       <Icon component={icon} />
                     )
                   }
-                  // icon={
-                  //   <IconComponent
-                  //     style={{
-                  //       color: selectedNavbar === path ? "#E64A51" : "inherit",
-                  //     }}
-                  //   />
-                  // }
                   path={path}
-                  active={selectedNavbar === path} // Set to `true` based on current route
                   isSidebarExpanded={isSidebarExpanded}
                 />
               ))}
             </div>
           </div>
+
           {/* Bottom */}
           <div className="sticky bottom-0 block mt-auto mb-4 mr-0 transition duration-200 whitespace-nowrap">
             <div className="flex justify-end space-y-2 ">
@@ -144,49 +145,6 @@ export default function SideNav({ selectedNavbar, collapsed, setCollapsed }) {
   );
 }
 
-// export const SideNavItem = ({
-//   label,
-//   icon,
-//   path,
-//   active,
-//   isSidebarExpanded,
-// }) => {
-//   return (
-//     <>
-//       {isSidebarExpanded ? (
-//         <Link
-//           href={path}
-//           className={`h-full relative flex items-center whitespace-nowrap rounded-md ${
-//             active
-//               ? " text-red "
-//               : "font-base text-sm  bg-navy shadow-sm text-white "
-//           }`}
-//         >
-//           <div className="relative font-base text-sm py-1.5 px-2 flex flex-row items-center space-x-2 rounded-md duration-100">
-//             {icon}
-//             <span>{label}</span>
-//           </div>
-//         </Link>
-//       ) : (
-//         <div delayDuration={70}>
-//           <Link
-//             href={path}
-//             className={`h-full relative flex items-center whitespace-nowrap rounded-md ${
-//               active
-//                 ? "text-red"
-//                 : "font-base text-sm  bg-navy shadow-sm text-white "
-//             }`}
-//           >
-//             <div className="relative flex flex-row items-center p-2 space-x-2 text-sm duration-100 rounded-md font-base">
-//               {icon}
-//             </div>
-//           </Link>
-//         </div>
-//       )}
-//     </>
-//   );
-// };
-
 export const SideNavItem = ({
   label,
   icon,
@@ -197,13 +155,14 @@ export const SideNavItem = ({
   return (
     <Link
       href={path}
-      className={`h-full relative flex items-center whitespace-nowrap rounded-md ${
+      className={`h-full relative flex items-center whitespace-nowrap  ${
         active
-          ? "bg-beige text-navy"
+          ? "bg-navy_2 text-white border-r-4 border-red"
           : "font-base text-sm bg-navy shadow-sm text-white"
-      }`}
+      }
+      ${isSidebarExpanded ? "pl-6" : "justify-center"}`}
     >
-      <div className="relative font-base text-sm py-1.5 px-2 flex flex-row items-center space-x-2 rounded-md duration-100">
+      <div className="relative font-base text-sm py-2 px-2 flex flex-row justify-center items-center space-x-2 rounded-md duration-100">
         {icon}
         {isSidebarExpanded && <span>{label}</span>}
       </div>

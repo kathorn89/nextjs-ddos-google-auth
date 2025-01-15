@@ -14,6 +14,7 @@ const figtree = Figtree({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <link rel="icon" href="/icon.png" sizes="any" />
       <body className={figtree.className}>
         <NextAuthProvider>
           <div className="relative flex -z-1">

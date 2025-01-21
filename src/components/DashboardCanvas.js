@@ -1,21 +1,29 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import moment from "moment";
-import MyIframe from "./MyIframe";
 import { DownOutlined } from "@ant-design/icons";
 const QuickRangesDropdown = dynamic(() => import("./QuickRangesDropdown"), {
   ssr: false,
 });
 
-export default function Page() {
-  // Set default range to "Last 1 hour"
-  const defaultRange = [
-    moment().subtract(1, "hour").valueOf(), // 1 hour ago in milliseconds
-    moment().valueOf(), // Current time in milliseconds
-  ];
+const MyIframe = dynamic(() => import("./MyIframe"), { ssr: false });
 
-  const [timeRange, setTimeRange] = useState(defaultRange); // Initialize state with default range
+export default function Page() {
+  // Set default range to "Last 1 hour" (match server-rendered output)
+  const [timeRange, setTimeRange] = useState([
+    moment().subtract(1, "hour").valueOf(),
+    moment().valueOf(),
+  ]);
+
+  // Update timeRange on the client side
+  useEffect(() => {
+    const defaultRange = [
+      moment().subtract(1, "hour").valueOf(),
+      moment().valueOf(),
+    ];
+    setTimeRange(defaultRange);
+  }, []);
 
   // Visibility state for sections
   const [showSummary, setShowSummary] = useState(true);

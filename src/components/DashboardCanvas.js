@@ -3,7 +3,8 @@ import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import moment from "moment";
 import { DownOutlined } from "@ant-design/icons";
-const QuickRangesDropdown = dynamic(() => import("./QuickRangesDropdown"), {
+
+const TimeRangeFilter = dynamic(() => import("./TimeRangeFilter"), {
   ssr: false,
 });
 
@@ -162,7 +163,7 @@ export default function Page() {
         <div className="flex flex-col gap-3 px-2 py-2 pb-8">
           <div className="flex flex-row items-center justify-between">
             <div> </div>
-            <QuickRangesDropdown onApply={handleApplyTimeRange} />
+            <TimeRangeFilter onApply={handleApplyTimeRange} />
           </div>
 
           <div className="grid grid-cols-2 gap-6">

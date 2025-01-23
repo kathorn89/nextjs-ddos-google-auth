@@ -37,7 +37,7 @@ export default function Page() {
   const panel = {
     httpRow1: [
       {
-        url: `/api/proxy?&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=31`,
+        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=31`,
         id: "activeUser",
       },
     ],

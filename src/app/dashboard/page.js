@@ -15,6 +15,7 @@ export default async function Page() {
   if (!session) {
     return redirect("/login");
   }
+
   return (
     <>
       <main className="flex px-0 ">

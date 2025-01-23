@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import Image from "next/image";
 import { Col, Form, Row } from "antd";
 import logoSmall from "@/assets/PTR_icon_red.png";
+import loginBg from "@/assets/ddos_bg.png";
 import GoogleBtn from "@/components/GoogleBtn";
 
 export const metadata = {
@@ -23,7 +24,12 @@ export default async function Page() {
         <Col
           xs={0}
           lg={12}
-          className=" bg-ddos-bg bg-cover bg-center w-[500px] h-[520px] rounded-l-xl"
+          style={{
+            backgroundImage: `url(${loginBg.src})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          className="w-[500px] h-[520px] rounded-l-xl"
         />
         <Col
           xs={24}

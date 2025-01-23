@@ -32,12 +32,12 @@ export default function Page() {
   const [showHealthCheck, setShowHealthCheck] = useState(true);
 
   const GRAFANA_DASHBOARD_URL =
-    "http://13.228.191.154:3777/d-solo/adu68f1hmk1s0h90/apache-jmeter-dashboard-v5?orgId=1";
+    "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com:3777/d-solo/adu68f1hmk1s0h89/apache-jmeter-dashboard-v5?orgId=1";
 
   const panel = {
     httpRow1: [
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=31`,
+        url: `/api/proxy?&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=31`,
         id: "activeUser",
       },
     ],

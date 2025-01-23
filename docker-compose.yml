@@ -1,3 +1,5 @@
+version: "3.9"
+
 services:
   influxdb_jmeter:
     image: influxdb:1.8.10
@@ -54,12 +56,16 @@ services:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin_password
       - GF_USERS_ALLOW_SIGN_UP=false
-      - GF_PATHS_CONFIG=/etc/grafana/grafana.ini
       - GF_SECURITY_ALLOW_EMBEDDING=true
+      - GF_SERVER_PROTOCOL=https
+      - GF_SERVER_CERT_FILE=/etc/letsencrypt/live/3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/fullchain.pem
+      - GF_SERVER_CERT_KEY=/etc/letsencrypt/live/3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/privkey.pem
+    user: root
     volumes:
       - grafana-data:/var/lib/grafana
       - ./grafana/provisioning:/etc/grafana/provisioning
       - ./grafana/dashboards:/var/lib/grafana/dashboards
+      - /etc/letsencrypt:/etc/letsencrypt:ro
       - ./grafana/config/grafana.ini:/etc/grafana/grafana.ini
 
   nextjs_app:
@@ -76,6 +82,19 @@ services:
     depends_on:
       - influxdb_jmeter
       - grafana
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - /etc/letsencrypt:/etc/letsencrypt
+      - ./nginx/log:/var/log/nginx
+    depends_on:
+      - nextjs_app
 
 volumes:
   influxdb-data-jmeter:

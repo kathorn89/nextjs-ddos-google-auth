@@ -1,0 +1,1103 @@
+2025/01/20 09:17:27 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/yourdomain.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/yourdomain.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/01/20 10:18:42 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/yourdomain.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/yourdomain.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/01/20 10:23:36 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/01/20 10:27:18 [notice] 1#1: using the "epoll" event method
+2025/01/20 10:27:18 [notice] 1#1: nginx/1.27.3
+2025/01/20 10:27:18 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/20 10:27:18 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/20 10:27:18 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/20 10:27:18 [notice] 1#1: start worker processes
+2025/01/20 10:27:18 [notice] 1#1: start worker process 20
+2025/01/20 10:27:18 [notice] 1#1: start worker process 21
+2025/01/20 10:27:18 [notice] 1#1: start worker process 22
+2025/01/20 10:27:18 [notice] 1#1: start worker process 23
+2025/01/20 10:28:07 [warn] 20#20: *3 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 184.22.234.160, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:28:07 [warn] 23#23: *11 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 184.22.234.160, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:28:07 [warn] 21#21: *5 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/00/0000000003 while reading upstream, client: 184.22.234.160, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:28:07 [warn] 22#22: *26 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/00/0000000004 while reading upstream, client: 184.22.234.160, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:28:08 [warn] 23#23: *10 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/00/0000000005 while reading upstream, client: 184.22.234.160, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/20 10:28:08 [warn] 22#22: *26 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/00/0000000006 while reading upstream, client: 184.22.234.160, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/20 10:28:56 [warn] 20#20: *192 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/00/0000000007 while reading upstream, client: 182.232.151.59, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:28:56 [warn] 21#21: *194 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/00/0000000008 while reading upstream, client: 182.232.151.59, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:28:56 [warn] 20#20: *186 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/00/0000000009 while reading upstream, client: 182.232.151.59, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/20 10:28:58 [warn] 20#20: *193 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/01/0000000010 while reading upstream, client: 182.232.151.59, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:29:01 [warn] 21#21: *194 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/01/0000000011 while reading upstream, client: 182.232.151.59, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:29:03 [warn] 20#20: *185 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/01/0000000012 while reading upstream, client: 182.232.151.59, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_bcf1a9._.js HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/chunks/node_modules_bcf1a9._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:29:33 [warn] 20#20: *193 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/01/0000000013 while reading upstream, client: 182.232.151.59, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:29:33 [warn] 20#20: *185 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/01/0000000014 while reading upstream, client: 182.232.151.59, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/20 10:29:36 [warn] 20#20: *191 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/01/0000000015 while reading upstream, client: 182.232.151.59, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:29:50 [warn] 20#20: *185 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/01/0000000016 while reading upstream, client: 182.232.151.59, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/20 10:29:52 [warn] 21#21: *194 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/01/0000000017 while reading upstream, client: 182.232.151.59, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:29:55 [warn] 20#20: *193 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/01/0000000018 while reading upstream, client: 182.232.151.59, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_bcf1a9._.js HTTP/1.1", upstream: "http://172.20.0.6:3000/_next/static/chunks/node_modules_bcf1a9._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:31:18 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/20 10:31:18 [notice] 21#21: gracefully shutting down
+2025/01/20 10:31:18 [notice] 23#23: gracefully shutting down
+2025/01/20 10:31:18 [notice] 21#21: exiting
+2025/01/20 10:31:18 [notice] 22#22: gracefully shutting down
+2025/01/20 10:31:18 [notice] 23#23: exiting
+2025/01/20 10:31:18 [notice] 22#22: exiting
+2025/01/20 10:31:18 [notice] 23#23: exit
+2025/01/20 10:31:18 [notice] 21#21: exit
+2025/01/20 10:31:18 [notice] 22#22: exit
+2025/01/20 10:31:18 [notice] 20#20: gracefully shutting down
+2025/01/20 10:31:18 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/20 10:31:18 [notice] 1#1: worker process 22 exited with code 0
+2025/01/20 10:31:18 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/20 10:31:18 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/20 10:31:18 [notice] 1#1: worker process 21 exited with code 0
+2025/01/20 10:31:18 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/20 10:31:18 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/01/20 10:31:18 [notice] 1#1: worker process 23 exited with code 0
+2025/01/20 10:31:18 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/20 10:31:40 [notice] 1#1: using the "epoll" event method
+2025/01/20 10:31:40 [notice] 1#1: nginx/1.27.3
+2025/01/20 10:31:40 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/20 10:31:40 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/20 10:31:40 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/20 10:31:40 [notice] 1#1: start worker processes
+2025/01/20 10:31:40 [notice] 1#1: start worker process 20
+2025/01/20 10:31:40 [notice] 1#1: start worker process 21
+2025/01/20 10:31:40 [notice] 1#1: start worker process 22
+2025/01/20 10:31:40 [notice] 1#1: start worker process 23
+2025/01/20 10:32:17 [warn] 22#22: *4 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 184.22.234.160, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:32:17 [warn] 20#20: *8 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 184.22.234.160, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/20 10:32:17 [warn] 20#20: *9 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/00/0000000003 while reading upstream, client: 184.22.234.160, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:32:17 [warn] 22#22: *4 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/00/0000000004 while reading upstream, client: 184.22.234.160, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:34:54 [warn] 20#20: *143 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/00/0000000005 while reading upstream, client: 184.22.234.160, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:34:54 [warn] 20#20: *142 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/00/0000000006 while reading upstream, client: 184.22.234.160, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/20 10:34:54 [warn] 21#21: *149 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/00/0000000007 while reading upstream, client: 184.22.234.160, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:34:54 [warn] 21#21: *149 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/00/0000000008 while reading upstream, client: 184.22.234.160, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/20 10:37:06 [warn] 23#23: *378 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/00/0000000009 while reading upstream, client: 182.232.151.59, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/20 10:37:06 [warn] 23#23: *379 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/01/0000000010 while reading upstream, client: 182.232.151.59, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/20 10:42:13 [warn] 21#21: *527 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/01/0000000011 while reading upstream, client: 184.22.234.160, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/20 10:42:13 [warn] 21#21: *532 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/01/0000000012 while reading upstream, client: 184.22.234.160, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/20 10:42:14 [warn] 23#23: *587 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/01/0000000013 while reading upstream, client: 184.22.234.160, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.21.0.6:3000/icon.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/20 10:42:22 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/20 10:42:22 [notice] 20#20: gracefully shutting down
+2025/01/20 10:42:22 [notice] 20#20: exiting
+2025/01/20 10:42:22 [notice] 20#20: exit
+2025/01/20 10:42:22 [notice] 21#21: gracefully shutting down
+2025/01/20 10:42:22 [notice] 23#23: gracefully shutting down
+2025/01/20 10:42:22 [notice] 22#22: gracefully shutting down
+2025/01/20 10:42:22 [notice] 22#22: exiting
+2025/01/20 10:42:22 [notice] 22#22: exit
+2025/01/20 10:42:22 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/01/20 10:42:22 [notice] 1#1: worker process 20 exited with code 0
+2025/01/20 10:42:22 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/20 10:42:22 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/20 10:42:22 [notice] 1#1: worker process 22 exited with code 0
+2025/01/20 10:42:22 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/20 10:42:22 [notice] 23#23: exiting
+2025/01/20 10:42:22 [notice] 21#21: exiting
+2025/01/20 10:42:22 [notice] 23#23: exit
+2025/01/20 10:42:22 [notice] 21#21: exit
+2025/01/20 10:42:22 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/01/20 10:42:22 [notice] 1#1: worker process 23 exited with code 0
+2025/01/20 10:42:22 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/20 10:42:22 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/20 10:42:22 [notice] 1#1: worker process 21 exited with code 0
+2025/01/20 10:42:22 [notice] 1#1: exit
+2025/01/21 03:25:55 [notice] 1#1: using the "epoll" event method
+2025/01/21 03:25:55 [notice] 1#1: nginx/1.27.3
+2025/01/21 03:25:55 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/21 03:25:55 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/21 03:25:55 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/21 03:25:55 [notice] 1#1: start worker processes
+2025/01/21 03:25:55 [notice] 1#1: start worker process 19
+2025/01/21 03:25:55 [notice] 1#1: start worker process 20
+2025/01/21 03:25:55 [notice] 1#1: start worker process 21
+2025/01/21 03:25:55 [notice] 1#1: start worker process 22
+2025/01/21 03:27:08 [warn] 20#20: *2 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 03:27:08 [warn] 19#19: *1 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 03:27:22 [warn] 20#20: *65 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/00/0000000003 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 03:27:22 [warn] 20#20: *63 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/00/0000000004 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_a477be._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_a477be._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 03:27:50 [warn] 19#19: *289 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/00/0000000005 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 03:27:50 [warn] 22#22: *287 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/00/0000000006 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 03:27:50 [warn] 22#22: *282 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/00/0000000007 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/21 03:27:50 [warn] 22#22: *288 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/00/0000000008 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 03:27:50 [warn] 22#22: *290 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/00/0000000009 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 03:34:05 [warn] 21#21: *534 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/01/0000000010 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 03:34:05 [warn] 22#22: *541 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/01/0000000011 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 03:34:06 [warn] 22#22: *583 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/01/0000000012 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.21.0.6:3000/icon.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 03:35:24 [warn] 19#19: *606 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/01/0000000013 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/realtime"
+2025/01/21 03:35:24 [warn] 19#19: *707 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/01/0000000014 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/realtime"
+2025/01/21 03:36:06 [warn] 20#20: *931 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/01/0000000015 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.21.0.6:3000/icon.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 03:36:51 [warn] 22#22: *1039 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/01/0000000016 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 03:36:51 [warn] 19#19: *1040 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/01/0000000017 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 03:36:51 [warn] 22#22: *1034 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/01/0000000018 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_a477be._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_a477be._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 03:37:08 [warn] 22#22: *1042 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/01/0000000019 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 03:37:08 [warn] 19#19: *1109 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/02/0000000020 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.21.0.6:3000/icon.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 03:38:23 [warn] 20#20: *1131 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/02/0000000021 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 03:38:27 [warn] 20#20: *1227 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/02/0000000022 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 03:38:32 [warn] 20#20: *1129 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/02/0000000023 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 03:38:33 [warn] 21#21: *1421 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/02/0000000024 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 03:39:01 [warn] 22#22: *1431 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/02/0000000025 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 03:40:18 [warn] 22#22: *1542 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/02/0000000026 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 03:40:18 [warn] 22#22: *1547 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/02/0000000027 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 03:40:27 [warn] 19#19: *1602 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/02/0000000028 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 03:40:27 [warn] 19#19: *1603 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/02/0000000029 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 03:40:44 [warn] 19#19: *1601 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/03/0000000030 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 04:09:04 [warn] 22#22: *1764 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/03/0000000031 while reading upstream, client: 199.45.155.69, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.21.0.6:3000/icon.png", host: "13.228.191.154"
+2025/01/21 04:09:04 [warn] 22#22: *1766 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/03/0000000032 while reading upstream, client: 199.45.155.69, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /login/icon.png?icon.995d153f.png HTTP/1.1", upstream: "http://172.21.0.6:3000/login/icon.png?icon.995d153f.png", host: "13.228.191.154"
+2025/01/21 04:58:44 [warn] 19#19: *1810 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/03/0000000033 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 04:58:44 [warn] 20#20: *1818 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/03/0000000034 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 04:58:44 [warn] 20#20: *1815 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/03/0000000035 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/21 04:58:46 [warn] 20#20: *1814 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/03/0000000036 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 04:58:51 [warn] 20#20: *1863 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/03/0000000037 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 04:58:51 [warn] 20#20: *1872 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/03/0000000038 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 04:58:51 [warn] 20#20: *1880 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/03/0000000039 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/21 04:58:55 [warn] 20#20: *1862 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/04/0000000040 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 04:58:57 [warn] 20#20: *1881 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/04/0000000041 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 04:58:57 [warn] 21#21: *1921 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/04/0000000042 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 04:58:57 [warn] 20#20: *1918 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/04/0000000043 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 04:58:57 [warn] 21#21: *1922 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/04/0000000044 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/21 04:59:00 [warn] 21#21: *1921 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/04/0000000045 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 04:59:01 [warn] 20#20: *1920 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/04/0000000046 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 04:59:04 [warn] 20#20: *1918 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/04/0000000047 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_bcf1a9._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_bcf1a9._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 04:59:20 [warn] 20#20: *1918 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/04/0000000048 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 04:59:20 [warn] 21#21: *1921 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/04/0000000049 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 04:59:20 [warn] 21#21: *2017 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/05/0000000050 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 04:59:21 [warn] 20#20: *1917 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/05/0000000051 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_a477be._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_a477be._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 04:59:22 [warn] 20#20: *1917 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/05/0000000052 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.21.0.6:3000/icon.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 05:00:49 [warn] 19#19: *2160 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/05/0000000053 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 05:00:49 [warn] 19#19: *2170 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/05/0000000054 while reading upstream, client: 49.229.176.9, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 05:42:48 [warn] 22#22: *2348 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/05/0000000055 while reading upstream, client: 185.242.226.157, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /login/icon.png?icon.995d153f.png HTTP/1.1", upstream: "http://172.21.0.6:3000/login/icon.png?icon.995d153f.png", host: "13.228.191.154"
+2025/01/21 05:42:50 [warn] 22#22: *2350 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/05/0000000056 while reading upstream, client: 185.242.226.157, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.21.0.6:3000/icon.png", host: "13.228.191.154"
+2025/01/21 06:12:58 [warn] 20#20: *2406 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/05/0000000057 while reading upstream, client: 49.229.147.130, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 06:12:58 [warn] 20#20: *2413 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/05/0000000058 while reading upstream, client: 49.229.147.130, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 06:12:58 [warn] 20#20: *2412 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/05/0000000059 while reading upstream, client: 49.229.147.130, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 06:12:58 [warn] 20#20: *2416 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/06/0000000060 while reading upstream, client: 49.229.147.130, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_a477be._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_a477be._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 06:13:29 [warn] 22#22: *2551 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/06/0000000061 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 06:13:29 [warn] 22#22: *2562 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/06/0000000062 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 06:16:56 [warn] 22#22: *2727 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/06/0000000063 while reading upstream, client: 49.229.147.130, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_107ce8._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_107ce8._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 06:16:56 [warn] 21#21: *2724 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/06/0000000064 while reading upstream, client: 49.229.147.130, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 06:16:56 [warn] 21#21: *2743 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/06/0000000065 while reading upstream, client: 49.229.147.130, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 06:16:56 [warn] 22#22: *2727 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/06/0000000066 while reading upstream, client: 49.229.147.130, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_a477be._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_a477be._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 06:27:42 [warn] 21#21: *2773 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/06/0000000067 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 06:27:42 [warn] 21#21: *2779 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/06/0000000068 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 06:27:42 [warn] 21#21: *2780 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/06/0000000069 while reading upstream, client: 184.22.235.93, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_a477be._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_a477be._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 06:30:06 [warn] 20#20: *2930 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/07/0000000070 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 06:30:06 [warn] 20#20: *2919 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/07/0000000071 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 06:30:07 [warn] 20#20: *2932 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/07/0000000072 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 06:30:07 [warn] 20#20: *2973 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/07/0000000073 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.21.0.6:3000/icon.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 07:13:25 [warn] 20#20: *3199 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/07/0000000074 while reading upstream, client: 167.94.138.185, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.21.0.6:3000/icon.png", host: "13.228.191.154"
+2025/01/21 07:13:34 [warn] 20#20: *3201 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/07/0000000075 while reading upstream, client: 167.94.138.185, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /login/icon.png?icon.995d153f.png HTTP/1.1", upstream: "http://172.21.0.6:3000/login/icon.png?icon.995d153f.png", host: "13.228.191.154"
+2025/01/21 07:38:09 [warn] 21#21: *3264 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/07/0000000076 while reading upstream, client: 27.55.80.241, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 07:38:09 [warn] 21#21: *3266 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/07/0000000077 while reading upstream, client: 27.55.80.241, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 07:38:10 [warn] 21#21: *3265 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/07/0000000078 while reading upstream, client: 27.55.80.241, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 07:38:11 [warn] 22#22: *3309 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/07/0000000079 while reading upstream, client: 27.55.80.241, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.21.0.6:3000/icon.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 07:38:11 [warn] 19#19: *3332 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/08/0000000080 while reading upstream, client: 27.55.80.241, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fecbdd._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fecbdd._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 07:40:36 [warn] 20#20: *3416 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/08/0000000081 while reading upstream, client: 27.55.80.241, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_107ce8._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_107ce8._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 07:40:36 [warn] 20#20: *3429 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/08/0000000082 while reading upstream, client: 27.55.80.241, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_5bc043._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_5bc043._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 07:40:36 [warn] 20#20: *3431 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/08/0000000083 while reading upstream, client: 27.55.80.241, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 07:40:36 [warn] 20#20: *3428 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/08/0000000084 while reading upstream, client: 27.55.80.241, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 07:40:37 [warn] 20#20: *3430 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/08/0000000085 while reading upstream, client: 27.55.80.241, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 07:40:37 [warn] 20#20: *3429 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/08/0000000086 while reading upstream, client: 27.55.80.241, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_a477be._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_a477be._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 08:18:42 [warn] 22#22: *3605 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/08/0000000087 while reading upstream, client: 27.55.80.241, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_107ce8._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_107ce8._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 08:18:42 [warn] 22#22: *3631 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/08/0000000088 while reading upstream, client: 27.55.80.241, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 08:18:42 [warn] 22#22: *3610 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/08/0000000089 while reading upstream, client: 27.55.80.241, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 08:18:42 [warn] 22#22: *3604 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/09/0000000090 while reading upstream, client: 27.55.80.241, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 08:19:20 [warn] 22#22: *3657 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/09/0000000091 while reading upstream, client: 209.126.83.235, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.21.0.6:3000/icon.png", host: "13.228.191.154"
+2025/01/21 08:40:15 [warn] 19#19: *3682 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/09/0000000092 while reading upstream, client: 185.242.226.153, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /login/icon.png?icon.995d153f.png HTTP/1.1", upstream: "http://172.21.0.6:3000/login/icon.png?icon.995d153f.png", host: "13.228.191.154"
+2025/01/21 08:40:17 [warn] 19#19: *3685 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/09/0000000093 while reading upstream, client: 185.242.226.153, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.21.0.6:3000/icon.png", host: "13.228.191.154"
+2025/01/21 09:15:11 [warn] 21#21: *3723 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/09/0000000094 while reading upstream, client: 152.32.185.141, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /login/icon.png?icon.995d153f.png HTTP/1.1", upstream: "http://172.21.0.6:3000/login/icon.png?icon.995d153f.png", host: "13.228.191.154"
+2025/01/21 09:17:37 [warn] 22#22: *3769 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/09/0000000095 while reading upstream, client: 49.229.145.32, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 09:17:37 [warn] 22#22: *3767 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/09/0000000096 while reading upstream, client: 49.229.145.32, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 09:17:37 [warn] 22#22: *3770 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/09/0000000097 while reading upstream, client: 49.229.145.32, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_a477be._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_a477be._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 09:25:21 [warn] 21#21: *3928 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/09/0000000098 while reading upstream, client: 49.229.145.32, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 09:25:21 [warn] 21#21: *3925 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/09/0000000099 while reading upstream, client: 49.229.145.32, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 09:25:21 [warn] 21#21: *3934 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/10/0000000100 while reading upstream, client: 49.229.145.32, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 09:25:22 [warn] 21#21: *3933 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/10/0000000101 while reading upstream, client: 49.229.145.32, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_a477be._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_a477be._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 09:25:24 [warn] 22#22: *3988 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/10/0000000102 while reading upstream, client: 49.229.145.32, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.21.0.6:3000/icon.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 09:42:59 [warn] 19#19: *4091 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/10/0000000103 while reading upstream, client: 49.229.145.32, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 09:42:59 [warn] 20#20: *4096 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/10/0000000104 while reading upstream, client: 49.229.145.32, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 09:43:00 [warn] 20#20: *4099 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/10/0000000105 while reading upstream, client: 49.229.145.32, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 09:43:00 [warn] 20#20: *4098 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/10/0000000106 while reading upstream, client: 49.229.145.32, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_a477be._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_a477be._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 09:43:02 [warn] 22#22: *4158 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/10/0000000107 while reading upstream, client: 49.229.145.32, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.21.0.6:3000/icon.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 09:43:05 [warn] 21#21: *4156 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/10/0000000108 while reading upstream, client: 49.229.145.32, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 09:43:05 [warn] 21#21: *4155 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/10/0000000109 while reading upstream, client: 49.229.145.32, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/21 09:43:05 [warn] 22#22: *4162 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/11/0000000110 while reading upstream, client: 49.229.145.32, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 09:49:37 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/21 09:49:37 [notice] 19#19: gracefully shutting down
+2025/01/21 09:49:37 [notice] 20#20: gracefully shutting down
+2025/01/21 09:49:37 [notice] 21#21: gracefully shutting down
+2025/01/21 09:49:37 [notice] 22#22: gracefully shutting down
+2025/01/21 09:49:37 [notice] 19#19: exiting
+2025/01/21 09:49:37 [notice] 20#20: exiting
+2025/01/21 09:49:37 [notice] 21#21: exiting
+2025/01/21 09:49:37 [notice] 22#22: exiting
+2025/01/21 09:49:37 [notice] 20#20: exit
+2025/01/21 09:49:37 [notice] 22#22: exit
+2025/01/21 09:49:37 [notice] 21#21: exit
+2025/01/21 09:49:37 [notice] 19#19: exit
+2025/01/21 09:49:37 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2025/01/21 09:49:37 [notice] 1#1: worker process 19 exited with code 0
+2025/01/21 09:49:37 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 09:49:37 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/01/21 09:49:37 [notice] 1#1: worker process 20 exited with code 0
+2025/01/21 09:49:37 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 09:49:37 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/21 09:49:37 [notice] 1#1: worker process 21 exited with code 0
+2025/01/21 09:49:37 [notice] 1#1: worker process 22 exited with code 0
+2025/01/21 09:49:37 [notice] 1#1: exit
+2025/01/21 09:49:47 [emerg] 1#1: could not build server_names_hash, you should increase server_names_hash_bucket_size: 64
+2025/01/21 10:09:53 [notice] 1#1: using the "epoll" event method
+2025/01/21 10:09:53 [notice] 1#1: nginx/1.27.3
+2025/01/21 10:09:53 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/21 10:09:53 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/21 10:09:53 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/21 10:09:53 [notice] 1#1: start worker processes
+2025/01/21 10:09:53 [notice] 1#1: start worker process 21
+2025/01/21 10:09:53 [notice] 1#1: start worker process 22
+2025/01/21 10:09:53 [notice] 1#1: start worker process 23
+2025/01/21 10:09:53 [notice] 1#1: start worker process 24
+2025/01/21 10:09:54 [error] 21#21: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /api/auth/signin?csrf=true HTTP/1.1", upstream: "http://172.19.0.6:3000/api/auth/signin?csrf=true", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "http://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com:3776/"
+2025/01/21 10:10:35 [warn] 24#24: *9 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 49.229.146.22, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.19.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 10:10:35 [warn] 21#21: *19 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 49.229.146.22, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.19.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/21 10:10:35 [warn] 21#21: *18 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/00/0000000003 while reading upstream, client: 49.229.146.22, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.19.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 10:10:35 [warn] 21#21: *17 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/00/0000000004 while reading upstream, client: 49.229.146.22, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.19.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 10:10:36 [warn] 24#24: *9 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/00/0000000005 while reading upstream, client: 49.229.146.22, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.19.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 10:10:37 [warn] 23#23: *2 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/00/0000000006 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.19.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 10:10:37 [warn] 23#23: *56 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/00/0000000007 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.19.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 10:10:37 [warn] 21#21: *1 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/00/0000000008 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_a477be._.js HTTP/1.1", upstream: "http://172.19.0.6:3000/_next/static/chunks/node_modules_a477be._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 10:10:38 [warn] 22#22: *8 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/00/0000000009 while reading upstream, client: 49.229.146.22, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.19.0.6:3000/icon.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/21 10:10:58 [warn] 21#21: *17 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/01/0000000010 while reading upstream, client: 49.229.146.22, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js.map HTTP/1.1", upstream: "http://172.19.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 10:10:58 [warn] 21#21: *20 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/01/0000000011 while reading upstream, client: 49.229.146.22, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map HTTP/1.1", upstream: "http://172.19.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/21 10:11:56 [warn] 21#21: *225 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/01/0000000012 while reading upstream, client: 49.229.146.22, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.19.0.6:3000/icon.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 10:42:39 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/21 10:42:39 [notice] 21#21: gracefully shutting down
+2025/01/21 10:42:39 [notice] 22#22: gracefully shutting down
+2025/01/21 10:42:39 [notice] 24#24: gracefully shutting down
+2025/01/21 10:42:39 [notice] 21#21: exiting
+2025/01/21 10:42:39 [notice] 22#22: exiting
+2025/01/21 10:42:39 [notice] 24#24: exiting
+2025/01/21 10:42:39 [notice] 21#21: exit
+2025/01/21 10:42:39 [notice] 22#22: exit
+2025/01/21 10:42:39 [notice] 24#24: exit
+2025/01/21 10:42:39 [notice] 23#23: gracefully shutting down
+2025/01/21 10:42:39 [notice] 23#23: exiting
+2025/01/21 10:42:39 [notice] 23#23: exit
+2025/01/21 10:42:40 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/21 10:42:40 [notice] 1#1: worker process 22 exited with code 0
+2025/01/21 10:42:40 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 10:42:40 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/21 10:42:40 [notice] 1#1: worker process 21 exited with code 0
+2025/01/21 10:42:40 [notice] 1#1: worker process 23 exited with code 0
+2025/01/21 10:42:40 [notice] 1#1: worker process 24 exited with code 0
+2025/01/21 10:42:40 [notice] 1#1: exit
+2025/01/21 10:42:51 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/01/21 10:46:31 [emerg] 1#1: host not found in upstream "grafana" in /etc/nginx/conf.d/nextjs.conf:36
+2025/01/21 10:54:51 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/01/21 10:57:26 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/01/21 10:59:07 [notice] 1#1: using the "epoll" event method
+2025/01/21 10:59:07 [notice] 1#1: nginx/1.27.3
+2025/01/21 10:59:07 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/21 10:59:07 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/21 10:59:07 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/21 10:59:07 [notice] 1#1: start worker processes
+2025/01/21 10:59:07 [notice] 1#1: start worker process 20
+2025/01/21 10:59:07 [notice] 1#1: start worker process 21
+2025/01/21 10:59:07 [notice] 1#1: start worker process 22
+2025/01/21 10:59:07 [notice] 1#1: start worker process 23
+2025/01/21 11:04:53 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/21 11:04:53 [notice] 20#20: gracefully shutting down
+2025/01/21 11:04:53 [notice] 22#22: gracefully shutting down
+2025/01/21 11:04:53 [notice] 22#22: exiting
+2025/01/21 11:04:53 [notice] 20#20: exiting
+2025/01/21 11:04:53 [notice] 22#22: exit
+2025/01/21 11:04:53 [notice] 20#20: exit
+2025/01/21 11:04:53 [notice] 21#21: gracefully shutting down
+2025/01/21 11:04:53 [notice] 21#21: exiting
+2025/01/21 11:04:53 [notice] 23#23: gracefully shutting down
+2025/01/21 11:04:53 [notice] 21#21: exit
+2025/01/21 11:04:53 [notice] 23#23: exiting
+2025/01/21 11:04:53 [notice] 23#23: exit
+2025/01/21 11:04:53 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/21 11:04:53 [notice] 1#1: worker process 20 exited with code 0
+2025/01/21 11:04:53 [notice] 1#1: worker process 21 exited with code 0
+2025/01/21 11:04:53 [notice] 1#1: worker process 22 exited with code 0
+2025/01/21 11:04:53 [notice] 1#1: worker process 23 exited with code 0
+2025/01/21 11:04:53 [notice] 1#1: exit
+2025/01/21 11:05:04 [notice] 1#1: using the "epoll" event method
+2025/01/21 11:05:04 [notice] 1#1: nginx/1.27.3
+2025/01/21 11:05:04 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/21 11:05:04 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/21 11:05:04 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/21 11:05:04 [notice] 1#1: start worker processes
+2025/01/21 11:05:04 [notice] 1#1: start worker process 21
+2025/01/21 11:05:04 [notice] 1#1: start worker process 22
+2025/01/21 11:05:04 [notice] 1#1: start worker process 23
+2025/01/21 11:05:04 [notice] 1#1: start worker process 24
+2025/01/21 11:06:40 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/21 11:06:40 [notice] 22#22: gracefully shutting down
+2025/01/21 11:06:40 [notice] 21#21: gracefully shutting down
+2025/01/21 11:06:40 [notice] 21#21: exiting
+2025/01/21 11:06:40 [notice] 21#21: exit
+2025/01/21 11:06:40 [notice] 24#24: gracefully shutting down
+2025/01/21 11:06:40 [notice] 24#24: exiting
+2025/01/21 11:06:40 [notice] 24#24: exit
+2025/01/21 11:06:40 [notice] 23#23: gracefully shutting down
+2025/01/21 11:06:40 [notice] 23#23: exiting
+2025/01/21 11:06:40 [notice] 23#23: exit
+2025/01/21 11:06:40 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/01/21 11:06:40 [notice] 1#1: worker process 23 exited with code 0
+2025/01/21 11:06:40 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 11:06:40 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/21 11:06:40 [notice] 1#1: worker process 21 exited with code 0
+2025/01/21 11:06:40 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 11:06:40 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2025/01/21 11:06:40 [notice] 1#1: worker process 24 exited with code 0
+2025/01/21 11:06:40 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 11:06:43 [notice] 22#22: exiting
+2025/01/21 11:06:43 [notice] 22#22: exit
+2025/01/21 11:06:43 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/21 11:06:43 [notice] 1#1: worker process 22 exited with code 0
+2025/01/21 11:06:43 [notice] 1#1: exit
+2025/01/21 11:06:53 [notice] 1#1: using the "epoll" event method
+2025/01/21 11:06:53 [notice] 1#1: nginx/1.27.3
+2025/01/21 11:06:53 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/21 11:06:53 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/21 11:06:53 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/21 11:06:53 [notice] 1#1: start worker processes
+2025/01/21 11:06:53 [notice] 1#1: start worker process 21
+2025/01/21 11:06:53 [notice] 1#1: start worker process 22
+2025/01/21 11:06:53 [notice] 1#1: start worker process 23
+2025/01/21 11:06:53 [notice] 1#1: start worker process 24
+2025/01/21 11:08:43 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/21 11:08:43 [notice] 21#21: gracefully shutting down
+2025/01/21 11:08:43 [notice] 22#22: gracefully shutting down
+2025/01/21 11:08:43 [notice] 23#23: gracefully shutting down
+2025/01/21 11:08:43 [notice] 21#21: exiting
+2025/01/21 11:08:43 [notice] 22#22: exiting
+2025/01/21 11:08:43 [notice] 23#23: exiting
+2025/01/21 11:08:43 [notice] 24#24: gracefully shutting down
+2025/01/21 11:08:43 [notice] 24#24: exiting
+2025/01/21 11:08:43 [notice] 21#21: exit
+2025/01/21 11:08:43 [notice] 22#22: exit
+2025/01/21 11:08:43 [notice] 24#24: exit
+2025/01/21 11:08:43 [notice] 23#23: exit
+2025/01/21 11:08:43 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2025/01/21 11:08:43 [notice] 1#1: worker process 21 exited with code 0
+2025/01/21 11:08:43 [notice] 1#1: worker process 22 exited with code 0
+2025/01/21 11:08:43 [notice] 1#1: worker process 24 exited with code 0
+2025/01/21 11:08:43 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 11:08:43 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/21 11:08:43 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/01/21 11:08:43 [notice] 1#1: worker process 23 exited with code 0
+2025/01/21 11:08:43 [notice] 1#1: exit
+2025/01/21 11:08:53 [notice] 1#1: using the "epoll" event method
+2025/01/21 11:08:53 [notice] 1#1: nginx/1.27.3
+2025/01/21 11:08:53 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/21 11:08:53 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/21 11:08:53 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/21 11:08:53 [notice] 1#1: start worker processes
+2025/01/21 11:08:53 [notice] 1#1: start worker process 20
+2025/01/21 11:08:53 [notice] 1#1: start worker process 21
+2025/01/21 11:08:53 [notice] 1#1: start worker process 22
+2025/01/21 11:08:53 [notice] 1#1: start worker process 23
+2025/01/21 11:12:47 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/21 11:12:47 [notice] 20#20: gracefully shutting down
+2025/01/21 11:12:47 [notice] 21#21: gracefully shutting down
+2025/01/21 11:12:47 [notice] 20#20: exiting
+2025/01/21 11:12:47 [notice] 21#21: exiting
+2025/01/21 11:12:47 [notice] 23#23: gracefully shutting down
+2025/01/21 11:12:47 [notice] 23#23: exiting
+2025/01/21 11:12:47 [notice] 20#20: exit
+2025/01/21 11:12:47 [notice] 21#21: exit
+2025/01/21 11:12:47 [notice] 23#23: exit
+2025/01/21 11:12:47 [notice] 22#22: gracefully shutting down
+2025/01/21 11:12:47 [notice] 22#22: exiting
+2025/01/21 11:12:47 [notice] 22#22: exit
+2025/01/21 11:12:47 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/01/21 11:12:47 [notice] 1#1: worker process 23 exited with code 0
+2025/01/21 11:12:47 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 11:12:47 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/21 11:12:47 [notice] 1#1: worker process 21 exited with code 0
+2025/01/21 11:12:47 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 11:12:47 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/21 11:12:47 [notice] 1#1: worker process 22 exited with code 0
+2025/01/21 11:12:47 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 11:12:47 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/01/21 11:12:47 [notice] 1#1: worker process 20 exited with code 0
+2025/01/21 11:12:47 [notice] 1#1: exit
+2025/01/21 11:13:01 [notice] 1#1: using the "epoll" event method
+2025/01/21 11:13:01 [notice] 1#1: nginx/1.27.3
+2025/01/21 11:13:01 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/21 11:13:01 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/21 11:13:01 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/21 11:13:01 [notice] 1#1: start worker processes
+2025/01/21 11:13:01 [notice] 1#1: start worker process 19
+2025/01/21 11:13:01 [notice] 1#1: start worker process 20
+2025/01/21 11:13:01 [notice] 1#1: start worker process 21
+2025/01/21 11:13:01 [notice] 1#1: start worker process 22
+2025/01/21 11:16:03 [warn] 20#20: *2 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.28.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 11:16:03 [warn] 22#22: *13 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.28.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 11:16:03 [warn] 19#19: *1 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/00/0000000003 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_a477be._.js HTTP/1.1", upstream: "http://172.28.0.6:3000/_next/static/chunks/node_modules_a477be._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 11:27:35 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/21 11:27:35 [notice] 19#19: gracefully shutting down
+2025/01/21 11:27:35 [notice] 20#20: gracefully shutting down
+2025/01/21 11:27:35 [notice] 21#21: gracefully shutting down
+2025/01/21 11:27:35 [notice] 19#19: exiting
+2025/01/21 11:27:35 [notice] 20#20: exiting
+2025/01/21 11:27:35 [notice] 21#21: exiting
+2025/01/21 11:27:35 [notice] 22#22: gracefully shutting down
+2025/01/21 11:27:35 [notice] 20#20: exit
+2025/01/21 11:27:35 [notice] 22#22: exiting
+2025/01/21 11:27:35 [notice] 21#21: exit
+2025/01/21 11:27:35 [notice] 22#22: exit
+2025/01/21 11:27:35 [notice] 19#19: exit
+2025/01/21 11:27:35 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/01/21 11:27:35 [notice] 1#1: worker process 20 exited with code 0
+2025/01/21 11:27:35 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 11:27:35 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/21 11:27:35 [notice] 1#1: worker process 22 exited with code 0
+2025/01/21 11:27:35 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 11:27:35 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/21 11:27:35 [notice] 1#1: worker process 21 exited with code 0
+2025/01/21 11:27:35 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 11:27:35 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2025/01/21 11:27:35 [notice] 1#1: worker process 19 exited with code 0
+2025/01/21 11:27:35 [notice] 1#1: exit
+2025/01/21 11:27:50 [notice] 1#1: using the "epoll" event method
+2025/01/21 11:27:50 [notice] 1#1: nginx/1.27.3
+2025/01/21 11:27:50 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/21 11:27:50 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/21 11:27:50 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/21 11:27:50 [notice] 1#1: start worker processes
+2025/01/21 11:27:50 [notice] 1#1: start worker process 20
+2025/01/21 11:27:50 [notice] 1#1: start worker process 21
+2025/01/21 11:27:50 [notice] 1#1: start worker process 22
+2025/01/21 11:27:50 [notice] 1#1: start worker process 23
+2025/01/21 11:30:01 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/21 11:30:01 [notice] 21#21: gracefully shutting down
+2025/01/21 11:30:01 [notice] 20#20: gracefully shutting down
+2025/01/21 11:30:01 [notice] 21#21: exiting
+2025/01/21 11:30:01 [notice] 20#20: exiting
+2025/01/21 11:30:01 [notice] 20#20: exit
+2025/01/21 11:30:01 [notice] 21#21: exit
+2025/01/21 11:30:01 [notice] 23#23: gracefully shutting down
+2025/01/21 11:30:01 [notice] 23#23: exiting
+2025/01/21 11:30:01 [notice] 23#23: exit
+2025/01/21 11:30:01 [notice] 22#22: gracefully shutting down
+2025/01/21 11:30:01 [notice] 22#22: exiting
+2025/01/21 11:30:01 [notice] 22#22: exit
+2025/01/21 11:30:01 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/01/21 11:30:01 [notice] 1#1: worker process 20 exited with code 0
+2025/01/21 11:30:01 [notice] 1#1: worker process 21 exited with code 0
+2025/01/21 11:30:01 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 11:30:01 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/21 11:30:01 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/01/21 11:30:01 [notice] 1#1: worker process 23 exited with code 0
+2025/01/21 11:30:01 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 11:30:01 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/21 11:30:01 [notice] 1#1: worker process 22 exited with code 0
+2025/01/21 11:30:01 [notice] 1#1: exit
+2025/01/21 11:30:08 [notice] 1#1: using the "epoll" event method
+2025/01/21 11:30:08 [notice] 1#1: nginx/1.27.3
+2025/01/21 11:30:08 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/21 11:30:08 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/21 11:30:08 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/21 11:30:08 [notice] 1#1: start worker processes
+2025/01/21 11:30:08 [notice] 1#1: start worker process 19
+2025/01/21 11:30:08 [notice] 1#1: start worker process 20
+2025/01/21 11:30:08 [notice] 1#1: start worker process 21
+2025/01/21 11:30:08 [notice] 1#1: start worker process 22
+2025/01/21 11:31:58 [warn] 22#22: *14 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 159.65.219.252, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png?icon.995d153f.png HTTP/1.1", upstream: "http://172.30.0.6:3000/icon.png?icon.995d153f.png", host: "13.228.191.154:443"
+2025/01/21 11:32:16 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/21 11:32:16 [notice] 19#19: gracefully shutting down
+2025/01/21 11:32:16 [notice] 20#20: gracefully shutting down
+2025/01/21 11:32:16 [notice] 21#21: gracefully shutting down
+2025/01/21 11:32:16 [notice] 19#19: exiting
+2025/01/21 11:32:16 [notice] 20#20: exiting
+2025/01/21 11:32:16 [notice] 21#21: exiting
+2025/01/21 11:32:16 [notice] 22#22: gracefully shutting down
+2025/01/21 11:32:16 [notice] 19#19: exit
+2025/01/21 11:32:16 [notice] 20#20: exit
+2025/01/21 11:32:16 [notice] 21#21: exit
+2025/01/21 11:32:16 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2025/01/21 11:32:16 [notice] 1#1: worker process 19 exited with code 0
+2025/01/21 11:32:16 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 11:32:16 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/21 11:32:16 [notice] 1#1: worker process 21 exited with code 0
+2025/01/21 11:32:16 [notice] 1#1: worker process 20 exited with code 0
+2025/01/21 11:32:16 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 11:32:16 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/01/21 11:32:41 [notice] 1#1: using the "epoll" event method
+2025/01/21 11:32:41 [notice] 1#1: nginx/1.27.3
+2025/01/21 11:32:41 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/21 11:32:41 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/21 11:32:41 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/21 11:32:41 [notice] 1#1: start worker processes
+2025/01/21 11:32:41 [notice] 1#1: start worker process 20
+2025/01/21 11:32:41 [notice] 1#1: start worker process 21
+2025/01/21 11:32:41 [notice] 1#1: start worker process 22
+2025/01/21 11:32:41 [notice] 1#1: start worker process 23
+2025/01/21 11:35:08 [warn] 21#21: *14 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://192.168.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 11:35:08 [warn] 21#21: *18 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://192.168.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 11:35:08 [warn] 21#21: *11 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/00/0000000003 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_a477be._.js HTTP/1.1", upstream: "http://192.168.0.6:3000/_next/static/chunks/node_modules_a477be._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/21 12:15:15 [warn] 21#21: *171 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/00/0000000004 while reading upstream, client: 54.190.97.145, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://192.168.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "13.228.191.154"
+2025/01/21 12:15:15 [warn] 21#21: *178 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/00/0000000005 while reading upstream, client: 54.190.97.145, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://192.168.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "13.228.191.154"
+2025/01/21 12:56:31 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/21 12:56:31 [notice] 22#22: gracefully shutting down
+2025/01/21 12:56:31 [notice] 22#22: exiting
+2025/01/21 12:56:31 [notice] 22#22: exit
+2025/01/21 12:56:31 [notice] 21#21: gracefully shutting down
+2025/01/21 12:56:31 [notice] 21#21: exiting
+2025/01/21 12:56:31 [notice] 23#23: gracefully shutting down
+2025/01/21 12:56:31 [notice] 23#23: exiting
+2025/01/21 12:56:31 [notice] 21#21: exit
+2025/01/21 12:56:31 [notice] 23#23: exit
+2025/01/21 12:56:31 [notice] 20#20: gracefully shutting down
+2025/01/21 12:56:31 [notice] 20#20: exiting
+2025/01/21 12:56:31 [notice] 20#20: exit
+2025/01/21 12:56:31 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/01/21 12:56:31 [notice] 1#1: worker process 20 exited with code 0
+2025/01/21 12:56:31 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 12:56:31 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/01/21 12:56:31 [notice] 1#1: worker process 23 exited with code 0
+2025/01/21 12:56:31 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 12:56:31 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/21 12:56:31 [notice] 1#1: worker process 22 exited with code 0
+2025/01/21 12:56:31 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/21 12:56:31 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/21 12:56:31 [notice] 1#1: worker process 21 exited with code 0
+2025/01/21 12:56:31 [notice] 1#1: exit
+2025/01/22 02:35:21 [notice] 1#1: using the "epoll" event method
+2025/01/22 02:35:21 [notice] 1#1: nginx/1.27.3
+2025/01/22 02:35:21 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/22 02:35:21 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/22 02:35:21 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/22 02:35:21 [notice] 1#1: start worker processes
+2025/01/22 02:35:21 [notice] 1#1: start worker process 19
+2025/01/22 02:35:21 [notice] 1#1: start worker process 20
+2025/01/22 02:35:21 [notice] 1#1: start worker process 21
+2025/01/22 02:35:21 [notice] 1#1: start worker process 22
+2025/01/22 03:13:37 [warn] 20#20: *38 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 87.236.176.152, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /login/icon.png?icon.995d153f.png HTTP/1.1", upstream: "http://192.168.0.6:3000/login/icon.png?icon.995d153f.png", host: "13.228.191.154"
+2025/01/22 03:13:37 [warn] 20#20: *37 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 185.247.137.124, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://192.168.0.6:3000/icon.png", host: "13.228.191.154"
+2025/01/22 03:13:37 [warn] 19#19: *35 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/00/0000000003 while reading upstream, client: 87.236.176.94, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png?icon.995d153f.png HTTP/1.1", upstream: "http://192.168.0.6:3000/icon.png?icon.995d153f.png", host: "13.228.191.154"
+2025/01/22 03:31:00 [warn] 21#21: *74 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/00/0000000004 while reading upstream, client: 206.168.34.48, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://192.168.0.6:3000/icon.png", host: "13.228.191.154"
+2025/01/22 03:31:08 [warn] 21#21: *76 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/00/0000000005 while reading upstream, client: 206.168.34.48, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /login/icon.png?icon.995d153f.png HTTP/1.1", upstream: "http://192.168.0.6:3000/login/icon.png?icon.995d153f.png", host: "13.228.191.154"
+2025/01/22 03:45:41 [warn] 21#21: *91 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/00/0000000006 while reading upstream, client: 4.227.36.110, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://192.168.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/22 03:46:38 [warn] 21#21: *91 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/00/0000000007 while reading upstream, client: 4.227.36.110, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://192.168.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/22 03:46:51 [warn] 21#21: *91 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/00/0000000008 while reading upstream, client: 4.227.36.110, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://192.168.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/22 05:56:52 [warn] 19#19: *337 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/00/0000000009 while reading upstream, client: 152.32.234.39, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png?icon.995d153f.png HTTP/1.1", upstream: "http://192.168.0.6:3000/icon.png?icon.995d153f.png", host: "13.228.191.154"
+2025/01/22 05:56:59 [warn] 19#19: *345 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/01/0000000010 while reading upstream, client: 152.32.234.39, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://192.168.0.6:3000/icon.png", host: "13.228.191.154"
+2025/01/22 06:04:04 [warn] 20#20: *359 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/01/0000000011 while reading upstream, client: 141.148.153.213, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://192.168.0.6:3000/icon.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/22 06:04:04 [warn] 20#20: *360 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/01/0000000012 while reading upstream, client: 141.148.153.213, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /login/icon.png?icon.995d153f.png HTTP/1.1", upstream: "http://192.168.0.6:3000/login/icon.png?icon.995d153f.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/22 06:08:23 [warn] 20#20: *369 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/01/0000000013 while reading upstream, client: 141.148.153.213, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://192.168.0.6:3000/icon.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/22 06:08:23 [warn] 20#20: *370 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/01/0000000014 while reading upstream, client: 141.148.153.213, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /login/icon.png?icon.995d153f.png HTTP/1.1", upstream: "http://192.168.0.6:3000/login/icon.png?icon.995d153f.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/22 06:40:39 [warn] 21#21: *407 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/01/0000000015 while reading upstream, client: 167.94.138.179, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://192.168.0.6:3000/icon.png", host: "13.228.191.154"
+2025/01/22 06:40:44 [warn] 21#21: *409 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/01/0000000016 while reading upstream, client: 167.94.138.179, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /login/icon.png?icon.995d153f.png HTTP/1.1", upstream: "http://192.168.0.6:3000/login/icon.png?icon.995d153f.png", host: "13.228.191.154"
+2025/01/22 06:54:38 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/22 06:54:38 [notice] 19#19: gracefully shutting down
+2025/01/22 06:54:38 [notice] 19#19: exiting
+2025/01/22 06:54:38 [notice] 20#20: gracefully shutting down
+2025/01/22 06:54:38 [notice] 20#20: exiting
+2025/01/22 06:54:38 [notice] 20#20: exit
+2025/01/22 06:54:38 [notice] 19#19: exit
+2025/01/22 06:54:38 [notice] 21#21: gracefully shutting down
+2025/01/22 06:54:38 [notice] 21#21: exiting
+2025/01/22 06:54:38 [notice] 22#22: gracefully shutting down
+2025/01/22 06:54:38 [notice] 22#22: exiting
+2025/01/22 06:54:38 [notice] 21#21: exit
+2025/01/22 06:54:38 [notice] 22#22: exit
+2025/01/22 06:54:38 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/22 06:54:38 [notice] 1#1: worker process 22 exited with code 0
+2025/01/22 06:54:38 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/22 06:54:38 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/22 06:54:38 [notice] 1#1: worker process 19 exited with code 0
+2025/01/22 06:54:38 [notice] 1#1: worker process 21 exited with code 0
+2025/01/22 06:54:38 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/22 06:54:38 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2025/01/22 06:54:38 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/01/22 06:54:38 [notice] 1#1: worker process 20 exited with code 0
+2025/01/22 06:54:38 [notice] 1#1: exit
+2025/01/22 06:54:55 [warn] 1#1: conflicting server name "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com" on 0.0.0.0:443, ignored
+2025/01/22 06:54:55 [emerg] 1#1: could not build server_names_hash, you should increase server_names_hash_bucket_size: 64
+2025/01/22 06:56:34 [warn] 1#1: conflicting server name "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com" on 0.0.0.0:443, ignored
+2025/01/22 06:56:34 [emerg] 1#1: could not build server_names_hash, you should increase server_names_hash_bucket_size: 64
+2025/01/22 09:17:41 [warn] 1#1: conflicting server name "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com" on 0.0.0.0:443, ignored
+2025/01/22 09:17:41 [emerg] 1#1: could not build server_names_hash, you should increase server_names_hash_bucket_size: 64
+2025/01/22 10:08:49 [notice] 1#1: using the "epoll" event method
+2025/01/22 10:08:49 [notice] 1#1: nginx/1.27.3
+2025/01/22 10:08:49 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/22 10:08:49 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/22 10:08:49 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/22 10:08:49 [notice] 1#1: start worker processes
+2025/01/22 10:08:49 [notice] 1#1: start worker process 20
+2025/01/22 10:08:49 [notice] 1#1: start worker process 21
+2025/01/22 10:08:49 [notice] 1#1: start worker process 22
+2025/01/22 10:08:49 [notice] 1#1: start worker process 23
+2025/01/22 10:09:35 [warn] 21#21: *2 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/22 10:09:35 [warn] 22#22: *13 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 184.22.235.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/22 12:20:01 [warn] 23#23: *264 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/00/0000000003 while reading upstream, client: 167.94.138.205, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.21.0.6:3000/icon.png", host: "13.228.191.154"
+2025/01/22 12:20:03 [warn] 23#23: *266 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/00/0000000004 while reading upstream, client: 167.94.138.205, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /login/icon.png?icon.995d153f.png HTTP/1.1", upstream: "http://172.21.0.6:3000/login/icon.png?icon.995d153f.png", host: "13.228.191.154"
+2025/01/22 12:28:13 [warn] 21#21: *324 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/00/0000000005 while reading upstream, client: 66.249.79.1, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/22 12:28:22 [warn] 21#21: *316 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/00/0000000006 while reading upstream, client: 66.249.79.8, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /login/icon.png?icon.995d153f.png HTTP/1.1", upstream: "http://172.21.0.6:3000/login/icon.png?icon.995d153f.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/22 13:10:26 [warn] 22#22: *394 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/00/0000000007 while reading upstream, client: 165.154.206.71, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png?icon.995d153f.png HTTP/1.1", upstream: "http://172.21.0.6:3000/icon.png?icon.995d153f.png", host: "13.228.191.154"
+2025/01/22 13:10:31 [warn] 22#22: *402 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/00/0000000008 while reading upstream, client: 165.154.206.71, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /icon.png HTTP/1.1", upstream: "http://172.21.0.6:3000/icon.png", host: "13.228.191.154"
+2025/01/22 14:06:22 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/22 14:06:22 [notice] 20#20: gracefully shutting down
+2025/01/22 14:06:22 [notice] 22#22: gracefully shutting down
+2025/01/22 14:06:22 [notice] 23#23: gracefully shutting down
+2025/01/22 14:06:22 [notice] 20#20: exiting
+2025/01/22 14:06:22 [notice] 22#22: exiting
+2025/01/22 14:06:22 [notice] 23#23: exiting
+2025/01/22 14:06:22 [notice] 20#20: exit
+2025/01/22 14:06:22 [notice] 21#21: gracefully shutting down
+2025/01/22 14:06:22 [notice] 21#21: exiting
+2025/01/22 14:06:22 [notice] 21#21: exit
+2025/01/22 14:06:22 [notice] 23#23: exit
+2025/01/22 14:06:22 [notice] 22#22: exit
+2025/01/22 14:06:22 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/01/22 14:06:22 [notice] 1#1: worker process 20 exited with code 0
+2025/01/22 14:06:22 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/22 14:06:22 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/01/22 14:06:22 [notice] 1#1: worker process 23 exited with code 0
+2025/01/22 14:06:22 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/22 14:06:22 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/22 14:06:22 [notice] 1#1: worker process 22 exited with code 0
+2025/01/22 14:06:22 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/22 14:06:22 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/22 14:06:22 [notice] 1#1: worker process 21 exited with code 0
+2025/01/22 14:06:22 [notice] 1#1: exit
+2025/01/23 02:17:53 [notice] 1#1: using the "epoll" event method
+2025/01/23 02:17:53 [notice] 1#1: nginx/1.27.3
+2025/01/23 02:17:53 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/23 02:17:53 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/23 02:17:53 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/23 02:17:53 [notice] 1#1: start worker processes
+2025/01/23 02:17:53 [notice] 1#1: start worker process 20
+2025/01/23 02:17:53 [notice] 1#1: start worker process 21
+2025/01/23 02:17:53 [notice] 1#1: start worker process 22
+2025/01/23 02:17:53 [notice] 1#1: start worker process 23
+2025/01/23 02:45:40 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/23 02:45:40 [notice] 20#20: gracefully shutting down
+2025/01/23 02:45:40 [notice] 21#21: gracefully shutting down
+2025/01/23 02:45:40 [notice] 20#20: exiting
+2025/01/23 02:45:40 [notice] 21#21: exiting
+2025/01/23 02:45:40 [notice] 20#20: exit
+2025/01/23 02:45:40 [notice] 21#21: exit
+2025/01/23 02:45:40 [notice] 23#23: gracefully shutting down
+2025/01/23 02:45:40 [notice] 23#23: exiting
+2025/01/23 02:45:40 [notice] 22#22: gracefully shutting down
+2025/01/23 02:45:40 [notice] 23#23: exit
+2025/01/23 02:45:40 [notice] 22#22: exiting
+2025/01/23 02:45:40 [notice] 22#22: exit
+2025/01/23 02:45:40 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/23 02:45:40 [notice] 1#1: worker process 22 exited with code 0
+2025/01/23 02:45:40 [notice] 1#1: worker process 20 exited with code 0
+2025/01/23 02:45:40 [notice] 1#1: worker process 21 exited with code 0
+2025/01/23 02:45:40 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 02:45:40 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/23 02:45:40 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/01/23 02:45:40 [notice] 1#1: worker process 23 exited with code 0
+2025/01/23 02:45:40 [notice] 1#1: exit
+2025/01/23 02:45:41 [notice] 1#1: using the "epoll" event method
+2025/01/23 02:45:41 [notice] 1#1: nginx/1.27.3
+2025/01/23 02:45:41 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/23 02:45:41 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/23 02:45:41 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/23 02:45:41 [notice] 1#1: start worker processes
+2025/01/23 02:45:41 [notice] 1#1: start worker process 20
+2025/01/23 02:45:41 [notice] 1#1: start worker process 21
+2025/01/23 02:45:41 [notice] 1#1: start worker process 22
+2025/01/23 02:45:41 [notice] 1#1: start worker process 23
+2025/01/23 02:51:02 [warn] 21#21: *221 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 34.72.176.129, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:51:02 [warn] 21#21: *228 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 104.197.69.115, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/23 02:51:03 [warn] 21#21: *225 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/00/0000000003 while reading upstream, client: 104.197.69.115, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:51:03 [warn] 21#21: *226 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/00/0000000004 while reading upstream, client: 34.122.147.229, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:51:04 [warn] 21#21: *221 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/00/0000000005 while reading upstream, client: 34.72.176.129, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:51:25 [warn] 22#22: *350 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/00/0000000006 while reading upstream, client: 205.169.39.130, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:51:25 [warn] 22#22: *348 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/00/0000000007 while reading upstream, client: 205.169.39.130, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:51:25 [warn] 22#22: *349 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/00/0000000008 while reading upstream, client: 205.169.39.130, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/23 02:51:26 [warn] 22#22: *343 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/00/0000000009 while reading upstream, client: 205.169.39.130, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:51:27 [warn] 22#22: *348 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/01/0000000010 while reading upstream, client: 205.169.39.130, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:51:47 [warn] 23#23: *430 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/01/0000000011 while reading upstream, client: 34.122.147.229, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:51:47 [warn] 23#23: *427 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/01/0000000012 while reading upstream, client: 104.197.69.115, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:51:47 [warn] 23#23: *424 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/01/0000000013 while reading upstream, client: 34.123.170.104, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/23 02:51:48 [warn] 23#23: *428 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/01/0000000014 while reading upstream, client: 34.122.147.229, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:51:49 [warn] 23#23: *430 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/01/0000000015 while reading upstream, client: 34.122.147.229, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:51:50 [warn] 20#20: *431 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/01/0000000016 while reading upstream, client: 34.123.170.104, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_bcf1a9._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_bcf1a9._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:52:03 [warn] 23#23: *488 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/01/0000000017 while reading upstream, client: 205.169.39.178, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:52:11 [warn] 20#20: *545 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/01/0000000018 while reading upstream, client: 205.169.39.178, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:52:11 [warn] 20#20: *547 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/01/0000000019 while reading upstream, client: 205.169.39.178, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:52:12 [warn] 23#23: *540 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/02/0000000020 while reading upstream, client: 205.169.39.178, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/23 02:52:13 [warn] 20#20: *547 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/02/0000000021 while reading upstream, client: 205.169.39.178, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:52:30 [warn] 21#21: *621 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/02/0000000022 while reading upstream, client: 49.229.230.111, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:52:30 [warn] 21#21: *622 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/02/0000000023 while reading upstream, client: 49.229.230.111, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:52:30 [warn] 21#21: *615 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/02/0000000024 while reading upstream, client: 49.229.230.111, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/23 02:52:31 [warn] 21#21: *616 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/02/0000000025 while reading upstream, client: 49.229.230.111, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:52:31 [warn] 21#21: *621 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/02/0000000026 while reading upstream, client: 49.229.230.111, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:53:11 [warn] 21#21: *714 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/02/0000000027 while reading upstream, client: 182.232.179.46, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 02:53:12 [warn] 21#21: *723 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/02/0000000028 while reading upstream, client: 182.232.179.46, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 02:53:12 [warn] 21#21: *724 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/02/0000000029 while reading upstream, client: 182.232.179.46, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 02:53:37 [warn] 21#21: *724 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/03/0000000030 while reading upstream, client: 182.232.179.46, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/23 02:53:38 [warn] 22#22: *721 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/03/0000000031 while reading upstream, client: 182.232.179.46, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js.map HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/23 02:54:51 [warn] 23#23: *883 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/03/0000000032 while reading upstream, client: 182.232.179.46, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 02:54:51 [warn] 22#22: *888 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/03/0000000033 while reading upstream, client: 182.232.179.46, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 02:54:52 [warn] 22#22: *899 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/03/0000000034 while reading upstream, client: 182.232.179.46, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 02:54:53 [warn] 22#22: *890 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/03/0000000035 while reading upstream, client: 182.232.179.46, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_a477be._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_a477be._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 02:56:41 [warn] 20#20: *1033 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/03/0000000036 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:56:41 [warn] 20#20: *1035 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/03/0000000037 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 02:56:41 [warn] 20#20: *1027 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/03/0000000038 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/23 02:56:42 [warn] 20#20: *1034 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/03/0000000039 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 03:02:59 [warn] 21#21: *1228 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/04/0000000040 while reading upstream, client: 205.169.39.164, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 03:03:00 [warn] 21#21: *1232 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/04/0000000041 while reading upstream, client: 205.169.39.164, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 03:03:09 [warn] 21#21: *1228 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/04/0000000042 while reading upstream, client: 205.169.39.164, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 03:03:09 [warn] 21#21: *1232 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/04/0000000043 while reading upstream, client: 205.169.39.164, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 03:07:16 [warn] 23#23: *1357 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/04/0000000044 while reading upstream, client: 147.50.115.202, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 03:07:16 [warn] 23#23: *1364 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/04/0000000045 while reading upstream, client: 147.50.115.202, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 03:07:16 [warn] 23#23: *1365 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/04/0000000046 while reading upstream, client: 147.50.115.202, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 03:07:24 [warn] 23#23: *1366 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/04/0000000047 while reading upstream, client: 147.50.115.202, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 03:14:53 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/23 03:14:53 [notice] 20#20: gracefully shutting down
+2025/01/23 03:14:53 [notice] 21#21: gracefully shutting down
+2025/01/23 03:14:53 [notice] 22#22: gracefully shutting down
+2025/01/23 03:14:53 [notice] 23#23: gracefully shutting down
+2025/01/23 03:14:53 [notice] 20#20: exiting
+2025/01/23 03:14:53 [notice] 21#21: exiting
+2025/01/23 03:14:53 [notice] 22#22: exiting
+2025/01/23 03:14:53 [notice] 23#23: exiting
+2025/01/23 03:14:53 [notice] 20#20: exit
+2025/01/23 03:14:53 [notice] 21#21: exit
+2025/01/23 03:14:53 [notice] 22#22: exit
+2025/01/23 03:14:53 [notice] 23#23: exit
+2025/01/23 03:14:53 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/23 03:14:53 [notice] 1#1: worker process 22 exited with code 0
+2025/01/23 03:14:53 [notice] 1#1: worker process 23 exited with code 0
+2025/01/23 03:14:53 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 03:14:53 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/01/23 03:14:53 [notice] 1#1: worker process 20 exited with code 0
+2025/01/23 03:14:53 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 03:14:53 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/23 03:14:53 [notice] 1#1: worker process 21 exited with code 0
+2025/01/23 03:14:53 [notice] 1#1: exit
+2025/01/23 03:15:05 [notice] 1#1: using the "epoll" event method
+2025/01/23 03:15:05 [notice] 1#1: nginx/1.27.3
+2025/01/23 03:15:05 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/23 03:15:05 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/23 03:15:05 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/23 03:15:05 [notice] 1#1: start worker processes
+2025/01/23 03:15:05 [notice] 1#1: start worker process 20
+2025/01/23 03:15:05 [notice] 1#1: start worker process 21
+2025/01/23 03:15:05 [notice] 1#1: start worker process 22
+2025/01/23 03:15:05 [notice] 1#1: start worker process 23
+2025/01/23 03:17:58 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/23 03:17:58 [notice] 20#20: gracefully shutting down
+2025/01/23 03:17:58 [notice] 21#21: gracefully shutting down
+2025/01/23 03:17:58 [notice] 22#22: gracefully shutting down
+2025/01/23 03:17:58 [notice] 23#23: gracefully shutting down
+2025/01/23 03:17:58 [notice] 20#20: exiting
+2025/01/23 03:17:58 [notice] 21#21: exiting
+2025/01/23 03:17:58 [notice] 22#22: exiting
+2025/01/23 03:17:58 [notice] 23#23: exiting
+2025/01/23 03:17:58 [notice] 21#21: exit
+2025/01/23 03:17:58 [notice] 20#20: exit
+2025/01/23 03:17:58 [notice] 22#22: exit
+2025/01/23 03:17:58 [notice] 23#23: exit
+2025/01/23 03:17:58 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/23 03:17:58 [notice] 1#1: worker process 21 exited with code 0
+2025/01/23 03:17:58 [notice] 1#1: worker process 20 exited with code 0
+2025/01/23 03:17:58 [notice] 1#1: worker process 22 exited with code 0
+2025/01/23 03:17:58 [notice] 1#1: worker process 23 exited with code 0
+2025/01/23 03:17:58 [notice] 1#1: exit
+2025/01/23 03:18:07 [notice] 1#1: using the "epoll" event method
+2025/01/23 03:18:07 [notice] 1#1: nginx/1.27.3
+2025/01/23 03:18:07 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/23 03:18:07 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/23 03:18:07 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/23 03:18:07 [notice] 1#1: start worker processes
+2025/01/23 03:18:07 [notice] 1#1: start worker process 20
+2025/01/23 03:18:07 [notice] 1#1: start worker process 21
+2025/01/23 03:18:07 [notice] 1#1: start worker process 22
+2025/01/23 03:18:07 [notice] 1#1: start worker process 23
+2025/01/23 03:19:06 [warn] 22#22: *6 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.19.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 03:19:07 [warn] 21#21: *3 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.19.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 03:19:11 [warn] 20#20: *1 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/00/0000000003 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.19.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 03:19:37 [warn] 20#20: *19 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/00/0000000004 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js.map HTTP/1.1", upstream: "http://172.19.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/23 03:19:38 [warn] 22#22: *6 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/00/0000000005 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map HTTP/1.1", upstream: "http://172.19.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js.map", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/23 03:27:39 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/23 03:27:39 [notice] 20#20: gracefully shutting down
+2025/01/23 03:27:39 [notice] 21#21: gracefully shutting down
+2025/01/23 03:27:39 [notice] 23#23: gracefully shutting down
+2025/01/23 03:27:39 [notice] 20#20: exiting
+2025/01/23 03:27:39 [notice] 21#21: exiting
+2025/01/23 03:27:39 [notice] 23#23: exiting
+2025/01/23 03:27:39 [notice] 22#22: gracefully shutting down
+2025/01/23 03:27:39 [notice] 22#22: exiting
+2025/01/23 03:27:39 [notice] 21#21: exit
+2025/01/23 03:27:39 [notice] 20#20: exit
+2025/01/23 03:27:39 [notice] 23#23: exit
+2025/01/23 03:27:39 [notice] 22#22: exit
+2025/01/23 03:27:39 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/01/23 03:27:39 [notice] 1#1: worker process 20 exited with code 0
+2025/01/23 03:27:39 [notice] 1#1: worker process 22 exited with code 0
+2025/01/23 03:27:39 [notice] 1#1: worker process 23 exited with code 0
+2025/01/23 03:27:39 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 03:27:39 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/01/23 03:27:39 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/23 03:27:39 [notice] 1#1: worker process 21 exited with code 0
+2025/01/23 03:27:39 [notice] 1#1: exit
+2025/01/23 03:27:53 [notice] 1#1: using the "epoll" event method
+2025/01/23 03:27:53 [notice] 1#1: nginx/1.27.3
+2025/01/23 03:27:53 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/23 03:27:53 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/23 03:27:53 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/23 03:27:53 [notice] 1#1: start worker processes
+2025/01/23 03:27:53 [notice] 1#1: start worker process 20
+2025/01/23 03:27:53 [notice] 1#1: start worker process 21
+2025/01/23 03:27:53 [notice] 1#1: start worker process 22
+2025/01/23 03:27:53 [notice] 1#1: start worker process 23
+2025/01/23 03:31:53 [error] 20#20: *1 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /login HTTP/1.1", upstream: "http://172.20.0.6:3000/login", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/23 03:35:42 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/23 03:35:42 [notice] 20#20: gracefully shutting down
+2025/01/23 03:35:42 [notice] 20#20: exiting
+2025/01/23 03:35:42 [notice] 22#22: gracefully shutting down
+2025/01/23 03:35:42 [notice] 22#22: exiting
+2025/01/23 03:35:42 [notice] 21#21: gracefully shutting down
+2025/01/23 03:35:42 [notice] 23#23: gracefully shutting down
+2025/01/23 03:35:42 [notice] 23#23: exiting
+2025/01/23 03:35:42 [notice] 21#21: exiting
+2025/01/23 03:35:42 [notice] 22#22: exit
+2025/01/23 03:35:42 [notice] 20#20: exit
+2025/01/23 03:35:42 [notice] 21#21: exit
+2025/01/23 03:35:42 [notice] 23#23: exit
+2025/01/23 03:35:42 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/23 03:35:42 [notice] 1#1: worker process 21 exited with code 0
+2025/01/23 03:35:42 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 03:35:42 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/23 03:35:42 [notice] 1#1: worker process 22 exited with code 0
+2025/01/23 03:35:42 [notice] 1#1: worker process 23 exited with code 0
+2025/01/23 03:35:42 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 03:35:42 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/01/23 03:35:42 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/01/23 03:35:42 [notice] 1#1: worker process 20 exited with code 0
+2025/01/23 03:35:42 [notice] 1#1: exit
+2025/01/23 03:35:52 [notice] 1#1: using the "epoll" event method
+2025/01/23 03:35:52 [notice] 1#1: nginx/1.27.3
+2025/01/23 03:35:52 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/23 03:35:52 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/23 03:35:52 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/23 03:35:52 [notice] 1#1: start worker processes
+2025/01/23 03:35:52 [notice] 1#1: start worker process 20
+2025/01/23 03:35:52 [notice] 1#1: start worker process 21
+2025/01/23 03:35:52 [notice] 1#1: start worker process 22
+2025/01/23 03:35:52 [notice] 1#1: start worker process 23
+2025/01/23 03:35:54 [error] 21#21: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /login HTTP/1.1", upstream: "http://172.21.0.6:3000/login", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/23 03:36:30 [warn] 23#23: *8 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 03:36:30 [warn] 21#21: *16 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 03:36:30 [warn] 20#20: *18 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/00/0000000003 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 03:41:53 [warn] 21#21: *65 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/00/0000000004 while reading upstream, client: 205.169.39.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 03:41:53 [warn] 21#21: *67 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/00/0000000005 while reading upstream, client: 205.169.39.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 03:41:53 [warn] 21#21: *59 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/00/0000000006 while reading upstream, client: 205.169.39.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/23 03:41:55 [warn] 21#21: *64 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/00/0000000007 while reading upstream, client: 205.169.39.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 03:41:55 [warn] 21#21: *66 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/00/0000000008 while reading upstream, client: 205.169.39.42, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_bcf1a9._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_bcf1a9._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 03:42:15 [warn] 21#21: *128 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/00/0000000009 while reading upstream, client: 205.169.39.13, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 03:42:15 [warn] 20#20: *131 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/01/0000000010 while reading upstream, client: 205.169.39.13, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 03:42:16 [warn] 21#21: *127 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/01/0000000011 while reading upstream, client: 205.169.39.13, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/23 03:42:16 [warn] 20#20: *130 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/01/0000000012 while reading upstream, client: 205.169.39.13, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/login"
+2025/01/23 04:47:28 [warn] 23#23: *281 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/01/0000000013 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "ec2-13-228-191-154.ap-southeast-1.compute.amazonaws.com", referrer: "https://ec2-13-228-191-154.ap-southeast-1.compute.amazonaws.com/login"
+2025/01/23 04:47:28 [warn] 23#23: *284 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/01/0000000014 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/media/ddos_bg.20088ba9.png HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/media/ddos_bg.20088ba9.png", host: "ec2-13-228-191-154.ap-southeast-1.compute.amazonaws.com", referrer: "https://ec2-13-228-191-154.ap-southeast-1.compute.amazonaws.com/_next/static/chunks/%5Broot%20of%20the%20server%5D__52d98a._.css"
+2025/01/23 04:47:28 [warn] 23#23: *282 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/01/0000000015 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "ec2-13-228-191-154.ap-southeast-1.compute.amazonaws.com", referrer: "https://ec2-13-228-191-154.ap-southeast-1.compute.amazonaws.com/login"
+2025/01/23 04:47:29 [warn] 23#23: *280 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/01/0000000016 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_antd_es_fd7a74._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_antd_es_fd7a74._.js", host: "ec2-13-228-191-154.ap-southeast-1.compute.amazonaws.com", referrer: "https://ec2-13-228-191-154.ap-southeast-1.compute.amazonaws.com/login"
+2025/01/23 04:47:29 [warn] 23#23: *285 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/01/0000000017 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_bcf1a9._.js HTTP/1.1", upstream: "http://172.21.0.6:3000/_next/static/chunks/node_modules_bcf1a9._.js", host: "ec2-13-228-191-154.ap-southeast-1.compute.amazonaws.com", referrer: "https://ec2-13-228-191-154.ap-southeast-1.compute.amazonaws.com/login"
+2025/01/23 05:29:51 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/23 05:29:51 [notice] 20#20: gracefully shutting down
+2025/01/23 05:29:51 [notice] 23#23: gracefully shutting down
+2025/01/23 05:29:51 [notice] 20#20: exiting
+2025/01/23 05:29:51 [notice] 23#23: exiting
+2025/01/23 05:29:51 [notice] 23#23: exit
+2025/01/23 05:29:51 [notice] 20#20: exit
+2025/01/23 05:29:51 [notice] 22#22: gracefully shutting down
+2025/01/23 05:29:51 [notice] 22#22: exiting
+2025/01/23 05:29:51 [notice] 21#21: gracefully shutting down
+2025/01/23 05:29:51 [notice] 21#21: exiting
+2025/01/23 05:29:51 [notice] 22#22: exit
+2025/01/23 05:29:51 [notice] 21#21: exit
+2025/01/23 05:29:52 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/01/23 05:29:52 [notice] 1#1: worker process 21 exited with code 0
+2025/01/23 05:29:52 [notice] 1#1: worker process 23 exited with code 0
+2025/01/23 05:29:52 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 05:29:52 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/23 05:29:52 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/23 05:29:52 [notice] 1#1: worker process 22 exited with code 0
+2025/01/23 05:29:52 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 05:29:52 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/01/23 05:29:52 [notice] 1#1: worker process 20 exited with code 0
+2025/01/23 05:29:52 [notice] 1#1: exit
+2025/01/23 05:30:02 [notice] 1#1: using the "epoll" event method
+2025/01/23 05:30:02 [notice] 1#1: nginx/1.27.3
+2025/01/23 05:30:02 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/23 05:30:02 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/23 05:30:02 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/23 05:30:02 [notice] 1#1: start worker processes
+2025/01/23 05:30:02 [notice] 1#1: start worker process 19
+2025/01/23 05:30:02 [notice] 1#1: start worker process 20
+2025/01/23 05:30:02 [notice] 1#1: start worker process 21
+2025/01/23 05:30:02 [notice] 1#1: start worker process 22
+2025/01/23 05:30:39 [warn] 20#20: *1 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.22.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 05:30:39 [warn] 22#22: *8 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 1.47.132.254, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.22.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com", referrer: "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/dashboard"
+2025/01/23 06:31:32 [warn] 19#19: *102 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/00/0000000003 while reading upstream, client: 45.148.10.90, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_client_523921._.js HTTP/1.1", upstream: "http://172.22.0.6:3000/_next/static/chunks/node_modules_next_dist_client_523921._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/23 06:31:33 [warn] 21#21: *118 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/00/0000000004 while reading upstream, client: 45.148.10.90, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_f63c2c._.js HTTP/1.1", upstream: "http://172.22.0.6:3000/_next/static/chunks/node_modules_f63c2c._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/23 06:31:33 [warn] 22#22: *171 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/00/0000000005 while reading upstream, client: 45.148.10.90, server: 3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com, request: "GET /_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js HTTP/1.1", upstream: "http://172.22.0.6:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js", host: "3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com"
+2025/01/23 06:58:49 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/23 06:58:49 [notice] 19#19: gracefully shutting down
+2025/01/23 06:58:49 [notice] 20#20: gracefully shutting down
+2025/01/23 06:58:49 [notice] 21#21: gracefully shutting down
+2025/01/23 06:58:49 [notice] 22#22: gracefully shutting down
+2025/01/23 06:58:49 [notice] 19#19: exiting
+2025/01/23 06:58:49 [notice] 20#20: exiting
+2025/01/23 06:58:49 [notice] 21#21: exiting
+2025/01/23 06:58:49 [notice] 22#22: exiting
+2025/01/23 06:58:49 [notice] 21#21: exit
+2025/01/23 06:58:49 [notice] 20#20: exit
+2025/01/23 06:58:49 [notice] 19#19: exit
+2025/01/23 06:58:49 [notice] 22#22: exit
+2025/01/23 06:58:49 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/01/23 06:58:49 [notice] 1#1: worker process 20 exited with code 0
+2025/01/23 06:58:49 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 06:58:49 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/23 06:58:49 [notice] 1#1: worker process 22 exited with code 0
+2025/01/23 06:58:49 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 06:58:49 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2025/01/23 06:58:49 [notice] 1#1: worker process 19 exited with code 0
+2025/01/23 06:58:49 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 06:58:49 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/23 06:58:49 [notice] 1#1: worker process 21 exited with code 0
+2025/01/23 06:58:49 [notice] 1#1: exit
+2025/01/23 06:58:58 [notice] 1#1: using the "epoll" event method
+2025/01/23 06:58:58 [notice] 1#1: nginx/1.27.3
+2025/01/23 06:58:58 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/23 06:58:58 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/23 06:58:58 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/23 06:58:58 [notice] 1#1: start worker processes
+2025/01/23 06:58:58 [notice] 1#1: start worker process 19
+2025/01/23 06:58:58 [notice] 1#1: start worker process 20
+2025/01/23 06:58:58 [notice] 1#1: start worker process 21
+2025/01/23 06:58:58 [notice] 1#1: start worker process 22
+2025/01/23 07:33:39 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/23 07:33:39 [notice] 21#21: gracefully shutting down
+2025/01/23 07:33:39 [notice] 22#22: gracefully shutting down
+2025/01/23 07:33:39 [notice] 21#21: exiting
+2025/01/23 07:33:39 [notice] 22#22: exiting
+2025/01/23 07:33:39 [notice] 20#20: gracefully shutting down
+2025/01/23 07:33:39 [notice] 20#20: exiting
+2025/01/23 07:33:39 [notice] 19#19: gracefully shutting down
+2025/01/23 07:33:39 [notice] 19#19: exiting
+2025/01/23 07:33:39 [notice] 21#21: exit
+2025/01/23 07:33:39 [notice] 20#20: exit
+2025/01/23 07:33:39 [notice] 22#22: exit
+2025/01/23 07:33:39 [notice] 19#19: exit
+2025/01/23 07:33:39 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/23 07:33:39 [notice] 1#1: worker process 21 exited with code 0
+2025/01/23 07:33:39 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 07:33:39 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/23 07:33:39 [notice] 1#1: worker process 22 exited with code 0
+2025/01/23 07:33:39 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 07:33:39 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/01/23 07:33:39 [notice] 1#1: worker process 20 exited with code 0
+2025/01/23 07:33:39 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 07:33:39 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2025/01/23 07:33:39 [notice] 1#1: worker process 19 exited with code 0
+2025/01/23 07:33:39 [notice] 1#1: exit
+2025/01/23 07:33:49 [notice] 1#1: using the "epoll" event method
+2025/01/23 07:33:49 [notice] 1#1: nginx/1.27.3
+2025/01/23 07:33:49 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/23 07:33:49 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/23 07:33:49 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/23 07:33:49 [notice] 1#1: start worker processes
+2025/01/23 07:33:49 [notice] 1#1: start worker process 20
+2025/01/23 07:33:49 [notice] 1#1: start worker process 21
+2025/01/23 07:33:49 [notice] 1#1: start worker process 22
+2025/01/23 07:33:49 [notice] 1#1: start worker process 23
+2025/01/23 07:52:56 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/23 07:52:56 [notice] 20#20: gracefully shutting down
+2025/01/23 07:52:56 [notice] 20#20: exiting
+2025/01/23 07:52:56 [notice] 20#20: exit
+2025/01/23 07:52:56 [notice] 22#22: gracefully shutting down
+2025/01/23 07:52:56 [notice] 21#21: gracefully shutting down
+2025/01/23 07:52:56 [notice] 23#23: gracefully shutting down
+2025/01/23 07:52:56 [notice] 22#22: exiting
+2025/01/23 07:52:56 [notice] 21#21: exiting
+2025/01/23 07:52:56 [notice] 23#23: exiting
+2025/01/23 07:52:56 [notice] 22#22: exit
+2025/01/23 07:52:56 [notice] 21#21: exit
+2025/01/23 07:52:56 [notice] 23#23: exit
+2025/01/23 07:52:56 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/23 07:52:56 [notice] 1#1: worker process 21 exited with code 0
+2025/01/23 07:52:56 [notice] 1#1: worker process 22 exited with code 0
+2025/01/23 07:52:56 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 07:52:56 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/23 07:52:56 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/01/23 07:52:56 [notice] 1#1: worker process 20 exited with code 0
+2025/01/23 07:52:56 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 07:52:56 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/01/23 07:52:56 [notice] 1#1: worker process 23 exited with code 0
+2025/01/23 07:52:56 [notice] 1#1: exit
+2025/01/23 07:53:05 [notice] 1#1: using the "epoll" event method
+2025/01/23 07:53:05 [notice] 1#1: nginx/1.27.3
+2025/01/23 07:53:05 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/23 07:53:05 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/23 07:53:05 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/23 07:53:05 [notice] 1#1: start worker processes
+2025/01/23 07:53:05 [notice] 1#1: start worker process 20
+2025/01/23 07:53:05 [notice] 1#1: start worker process 21
+2025/01/23 07:53:05 [notice] 1#1: start worker process 22
+2025/01/23 07:53:05 [notice] 1#1: start worker process 23
+2025/01/23 08:03:04 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/23 08:03:04 [notice] 22#22: gracefully shutting down
+2025/01/23 08:03:04 [notice] 20#20: gracefully shutting down
+2025/01/23 08:03:04 [notice] 22#22: exiting
+2025/01/23 08:03:04 [notice] 20#20: exiting
+2025/01/23 08:03:04 [notice] 22#22: exit
+2025/01/23 08:03:04 [notice] 20#20: exit
+2025/01/23 08:03:04 [notice] 21#21: gracefully shutting down
+2025/01/23 08:03:04 [notice] 23#23: gracefully shutting down
+2025/01/23 08:03:04 [notice] 21#21: exiting
+2025/01/23 08:03:04 [notice] 23#23: exiting
+2025/01/23 08:03:04 [notice] 21#21: exit
+2025/01/23 08:03:04 [notice] 23#23: exit
+2025/01/23 08:03:04 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/23 08:03:04 [notice] 1#1: worker process 22 exited with code 0
+2025/01/23 08:03:04 [notice] 1#1: worker process 23 exited with code 0
+2025/01/23 08:03:04 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 08:03:04 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/23 08:03:04 [notice] 1#1: worker process 21 exited with code 0
+2025/01/23 08:03:04 [notice] 1#1: worker process 20 exited with code 0
+2025/01/23 08:03:04 [notice] 1#1: exit
+2025/01/23 08:03:14 [notice] 1#1: using the "epoll" event method
+2025/01/23 08:03:14 [notice] 1#1: nginx/1.27.3
+2025/01/23 08:03:14 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/01/23 08:03:14 [notice] 1#1: OS: Linux 6.1.112-122.189.amzn2023.aarch64
+2025/01/23 08:03:14 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 32768:65536
+2025/01/23 08:03:14 [notice] 1#1: start worker processes
+2025/01/23 08:03:14 [notice] 1#1: start worker process 20
+2025/01/23 08:03:14 [notice] 1#1: start worker process 21
+2025/01/23 08:03:14 [notice] 1#1: start worker process 22
+2025/01/23 08:03:14 [notice] 1#1: start worker process 23
+2025/01/23 08:16:32 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/01/23 08:16:32 [notice] 21#21: gracefully shutting down
+2025/01/23 08:16:32 [notice] 20#20: gracefully shutting down
+2025/01/23 08:16:32 [notice] 21#21: exiting
+2025/01/23 08:16:32 [notice] 20#20: exiting
+2025/01/23 08:16:32 [notice] 20#20: exit
+2025/01/23 08:16:32 [notice] 21#21: exit
+2025/01/23 08:16:32 [notice] 22#22: gracefully shutting down
+2025/01/23 08:16:32 [notice] 22#22: exiting
+2025/01/23 08:16:32 [notice] 22#22: exit
+2025/01/23 08:16:32 [notice] 23#23: gracefully shutting down
+2025/01/23 08:16:32 [notice] 23#23: exiting
+2025/01/23 08:16:32 [notice] 23#23: exit
+2025/01/23 08:16:32 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/01/23 08:16:32 [notice] 1#1: worker process 21 exited with code 0
+2025/01/23 08:16:32 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 08:16:32 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/01/23 08:16:32 [notice] 1#1: worker process 20 exited with code 0
+2025/01/23 08:16:32 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 08:16:32 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/01/23 08:16:32 [notice] 1#1: worker process 22 exited with code 0
+2025/01/23 08:16:32 [notice] 1#1: signal 29 (SIGIO) received
+2025/01/23 08:16:32 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/01/23 08:16:32 [notice] 1#1: worker process 23 exited with code 0
+2025/01/23 08:16:32 [notice] 1#1: exit

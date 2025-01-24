@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import "@ant-design/v5-patch-for-react-19";
 import { Dropdown, Menu, DatePicker, Button } from "antd";
 import moment from "moment";
 import { DownOutlined, ClockCircleOutlined } from "@ant-design/icons";

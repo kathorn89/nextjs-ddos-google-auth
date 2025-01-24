@@ -2,18 +2,14 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import Image from "next/image";
+import "@ant-design/v5-patch-for-react-19";
 import { Col, Form, Row } from "antd";
 import logoSmall from "@/assets/PTR_icon_red.png";
-import loginBg from "@/assets/ddos_bg.png";
 import GoogleBtn from "@/components/GoogleBtn";
-
-export const metadata = {
-  title: "Dashboard",
-  description: "DDos Dashboard by Playtorium",
-};
 
 export default async function Page() {
   const session = await getServerSession(authOptions);
+
   if (session) {
     return redirect("/dashboard");
   }
@@ -25,7 +21,7 @@ export default async function Page() {
           xs={0}
           lg={12}
           style={{
-            backgroundImage: `url(${loginBg.src})`,
+            backgroundImage: "url('/ddos_bg.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

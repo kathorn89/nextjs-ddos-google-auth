@@ -5,6 +5,7 @@ import { DownOutlined, RocketOutlined, UserOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import Image from "next/image";
 import userImg from "@/assets/userImg.svg";
+import "@ant-design/v5-patch-for-react-19";
 import { Dropdown, Menu, Avatar, Space, Badge } from "antd";
 
 export default function Header() {

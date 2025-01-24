@@ -1,6 +1,7 @@
 "use client";
 
 import { useSession, signIn, signOut } from "next-auth/react";
+import "@ant-design/v5-patch-for-react-19";
 import { Button } from "antd";
 import logoGoogle from "@/assets/logoGoogle.png";
 import Image from "next/image";

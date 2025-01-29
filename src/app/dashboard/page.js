@@ -17,16 +17,14 @@ export default async function Page() {
   }
 
   return (
-    <>
-      <main className="flex px-0 ">
-        <div className="overflow-x-hidden">
-          <Header />
-        </div>
+    <main>
+      <div className="overflow-x-hidden">
+        <Header />
+      </div>
 
-        <div className="px-6 -z-999">
-          <DashboardCanvas />
-        </div>
-      </main>
-    </>
+      <div className="px-6 -z-999">
+        <DashboardCanvas />
+      </div>
+    </main>
   );
 }

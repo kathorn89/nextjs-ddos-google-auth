@@ -3,12 +3,16 @@ import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import moment from "moment";
 import { DownOutlined } from "@ant-design/icons";
+import { encryptURL } from "@/lib/encryption";
 
 const TimeRangeFilter = dynamic(() => import("./TimeRangeFilter"), {
   ssr: false,
 });
 
 const MyIframe = dynamic(() => import("./MyIframe"), { ssr: false });
+
+const GRAFANA_DASHBOARD_URL =
+  "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/service1/d-solo/adu68f1hmk1s0h89/apache-jmeter-dashboard-v5?orgId=1";
 
 export default function Page() {
   // Set default range to "Last 1 hour" (match server-rendered output)
@@ -30,124 +34,142 @@ export default function Page() {
   const [showSummary, setShowSummary] = useState(true);
   const [showTCP, setShowTCP] = useState(true);
   const [showHealthCheck, setShowHealthCheck] = useState(true);
+  const [encryptedToken, setEncryptedToken] = useState("");
 
-  const GRAFANA_DASHBOARD_URL =
-    "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/service1/d-solo/adu68f1hmk1s0h89/apache-jmeter-dashboard-v5?orgId=1";
+  // Encrypt the dashboard URL once when component mounts
+  useEffect(() => {
+    if (GRAFANA_DASHBOARD_URL) {
+      const token = encryptURL(GRAFANA_DASHBOARD_URL);
+      setEncryptedToken(token); // Set encrypted token
+    }
+  }, []);
+
+  // Generate panel URLs dynamically
+  const generatePanelUrl = (panelId) => {
+    if (!timeRange || timeRange.length !== 2) {
+      console.error("Invalid time range:", timeRange);
+      return ""; // Handle invalid time range
+    }
+
+    return encryptURL(
+      `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=${panelId}`
+    );
+  };
 
   const panel = {
     httpRow1: [
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=31`,
+        url: generatePanelUrl(31),
         id: "activeUser",
       },
     ],
     httpRow2: [
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=26`,
+        url: generatePanelUrl(26),
         id: "totalReq",
       },
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=28`,
+        url: generatePanelUrl(28),
         id: "failedReq",
       },
     ],
     httpRow3: [
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=98`,
+        url: generatePanelUrl(98),
         id: "successRate",
       },
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=29`,
+        url: generatePanelUrl(29),
         id: "errorRate",
       },
     ],
     httpRow4: [
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=37`,
+        url: generatePanelUrl(37),
         id: "tSentByte",
       },
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=2`,
+        url: generatePanelUrl(2),
         id: "tError",
       },
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=4`,
+        url: generatePanelUrl(4),
         id: "tThroughput",
       },
     ],
     httpRow5: [
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=65`,
+        url: generatePanelUrl(65),
         id: "avgResp",
       },
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=36`,
+        url: generatePanelUrl(36),
         id: "networkTff",
       },
     ],
 
     tcpRow1: [
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=60`,
+        url: generatePanelUrl(60),
         id: "tcpUser",
       },
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=96`,
+        url: generatePanelUrl(96),
         id: "tcpActThread",
       },
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=61`,
+        url: generatePanelUrl(61),
         id: "tcpReq",
       },
     ],
     tcpRow2: [
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=62`,
+        url: generatePanelUrl(62),
         id: "tcpThroughput",
       },
     ],
 
     hcRow1: [
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=68`,
+        url: generatePanelUrl(68),
         id: "hcUser",
       },
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=72`,
+        url: generatePanelUrl(72),
         id: "hcAvg",
       },
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=79`,
+        url: generatePanelUrl(79),
         id: "hcError",
       },
     ],
     hcRow2: [
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=100`,
+        url: generatePanelUrl(100),
         id: "hcTotalReq",
       },
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=99`,
+        url: generatePanelUrl(99),
         id: "hcFailedReq",
       },
     ],
     hcRow3: [
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=86`,
+        url: generatePanelUrl(86),
         id: "hcResp",
       },
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=97`,
+        url: generatePanelUrl(97),
         id: "hcThroughput",
       },
     ],
     hcRow4: [
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=74`,
+        url: generatePanelUrl(74),
         id: "hcErrps",
       },
       {
-        url: `${GRAFANA_DASHBOARD_URL}&refresh=5s&from=${timeRange[0]}&to=${timeRange[1]}&panelId=94`,
+        url: generatePanelUrl(94),
         id: "hcErrInfo",
       },
     ],
@@ -159,7 +181,7 @@ export default function Page() {
 
   return (
     <>
-      <main className="flex flex-col items-center justify-between w-full h-screen px-0 py-16">
+      <main className="flex flex-col justify-around w-full h-screen px-0 py-16">
         <div className="flex flex-col gap-3 px-2 py-2 pb-8">
           <div className="flex flex-row items-center justify-between">
             <div> </div>
@@ -186,7 +208,7 @@ export default function Page() {
                       {panel.httpRow1.map(({ url, id }) => (
                         <MyIframe
                           key={id}
-                          src={url}
+                          src={`/api/iframe?token=${url}`}
                           id={id}
                           width="100%"
                           height="200"
@@ -197,7 +219,7 @@ export default function Page() {
                       {panel.httpRow2.map(({ url, id }) => (
                         <MyIframe
                           key={id}
-                          src={url}
+                          src={`/api/iframe?token=${url}`}
                           id={id}
                           width="100%"
                           height="200"
@@ -208,7 +230,7 @@ export default function Page() {
                       {panel.httpRow3.map(({ url, id }) => (
                         <MyIframe
                           key={id}
-                          src={url}
+                          src={`/api/iframe?token=${url}`}
                           id={id}
                           width="100%"
                           height="200"
@@ -219,7 +241,7 @@ export default function Page() {
                       {panel.httpRow4.map(({ url, id }) => (
                         <MyIframe
                           key={id}
-                          src={url}
+                          src={`/api/iframe?token=${url}`}
                           id={id}
                           width="100%"
                           height="200"
@@ -230,7 +252,7 @@ export default function Page() {
                       {panel.httpRow5.map(({ url, id }) => (
                         <MyIframe
                           key={id}
-                          src={url}
+                          src={`/api/iframe?token=${url}`}
                           id={id}
                           width="100%"
                           height="300"
@@ -260,7 +282,7 @@ export default function Page() {
                       {panel.tcpRow1.map(({ url, id }) => (
                         <MyIframe
                           key={id}
-                          src={url}
+                          src={`/api/iframe?token=${url}`}
                           id={id}
                           width="100%"
                           height="180"
@@ -272,7 +294,7 @@ export default function Page() {
                       {panel.tcpRow2.map(({ url, id }) => (
                         <MyIframe
                           key={id}
-                          src={url}
+                          src={`/api/iframe?token=${url}`}
                           id={id}
                           width="100%"
                           height="300"
@@ -306,7 +328,7 @@ export default function Page() {
                     {panel.hcRow1.map(({ url, id }) => (
                       <MyIframe
                         key={id}
-                        src={url}
+                        src={`/api/iframe?token=${url}`}
                         id={id}
                         width="100%"
                         height="200"
@@ -317,7 +339,7 @@ export default function Page() {
                     {panel.hcRow2.map(({ url, id }) => (
                       <MyIframe
                         key={id}
-                        src={url}
+                        src={`/api/iframe?token=${url}`}
                         id={id}
                         width="100%"
                         height="200"
@@ -328,7 +350,7 @@ export default function Page() {
                     {panel.hcRow3.map(({ url, id }) => (
                       <MyIframe
                         key={id}
-                        src={url}
+                        src={`/api/iframe?token=${url}`}
                         id={id}
                         width="100%"
                         height="300"
@@ -339,7 +361,7 @@ export default function Page() {
                     {panel.hcRow4.map(({ url, id }) => (
                       <MyIframe
                         key={id}
-                        src={url}
+                        src={`/api/iframe?token=${url}`}
                         id={id}
                         width="100%"
                         height="300"

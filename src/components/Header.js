@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <header className="z-99">
-      <nav className="fixed top-0 justify-between w-[96vw] pl-6 pr-10 py-3 overflow-x-hidden bg-white z-1000 lg:flex-wrap lg:justify-start">
+      <nav className="fixed top-0 justify-between w-screen pl-6 sm:pr-[10vw]  md:pr-[7vw] py-3 overflow-x-hidden bg-white z-1000 lg:flex-wrap lg:justify-start">
         <div className="flex items-center justify-between">
           <Link href="/">
             <div className="flex space-x-1">

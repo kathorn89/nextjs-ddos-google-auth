@@ -16,7 +16,7 @@ export default async function Page() {
   const session = await getServerSession(authOptions);
 
   const GRAFANA_DASHBOARD_URL =
-    "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com:3777/d-solo/adu68f1hmk1s0h89/apache-jmeter-dashboard-v5?orgId=1";
+    "https://3c16t1t8l22k0u8p15b17k0z21p19h22l3t16k22u8p15t27.com/service1/d-solo/adu68f1hmk1s0h89/apache-jmeter-dashboard-v5?orgId=1";
 
   // Default time range (Last 1 hour)
   const timeRange = [
